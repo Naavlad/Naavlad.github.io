@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on johndoe</title>
-    <link>https://naavlad.github.io/categories/</link>
-    <description>Recent content in Categories on johndoe</description>
+    <title>Categories on naavlad.ru</title>
+    <link>https://naavlad.ru/categories/</link>
+    <description>Recent content in Categories on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://naavlad.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://naavlad.ru/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

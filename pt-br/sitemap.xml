@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://naavlad.github.io/pt-br/authors/</loc>
+    <loc>https://naavlad.ru/pt-br/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://naavlad.github.io/authors/"
+                href="https://naavlad.ru/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://naavlad.github.io/pt-br/authors/"
+                href="https://naavlad.ru/pt-br/authors/"
                 />
   </url><url>
-    <loc>https://naavlad.github.io/pt-br/categories/</loc>
+    <loc>https://naavlad.ru/pt-br/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://naavlad.github.io/categories/"
+                href="https://naavlad.ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://naavlad.github.io/pt-br/categories/"
+                href="https://naavlad.ru/pt-br/categories/"
                 />
   </url><url>
-    <loc>https://naavlad.github.io/pt-br/</loc>
+    <loc>https://naavlad.ru/pt-br/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://naavlad.github.io/"
+                href="https://naavlad.ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://naavlad.github.io/pt-br/"
+                href="https://naavlad.ru/pt-br/"
                 />
   </url><url>
-    <loc>https://naavlad.github.io/pt-br/series/</loc>
+    <loc>https://naavlad.ru/pt-br/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://naavlad.github.io/series/"
+                href="https://naavlad.ru/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://naavlad.github.io/pt-br/series/"
+                href="https://naavlad.ru/pt-br/series/"
                 />
   </url><url>
-    <loc>https://naavlad.github.io/pt-br/tags/</loc>
+    <loc>https://naavlad.ru/pt-br/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://naavlad.github.io/tags/"
+                href="https://naavlad.ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://naavlad.github.io/pt-br/tags/"
+                href="https://naavlad.ru/pt-br/tags/"
                 />
   </url>
 </urlset>
