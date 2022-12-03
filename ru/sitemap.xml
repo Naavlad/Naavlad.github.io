@@ -2,70 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://naavlad.ru/contact/</loc>
-    <lastmod>2022-12-03T19:24:13+03:00</lastmod>
-  </url><url>
-    <loc>https://naavlad.ru/about/</loc>
-    <lastmod>2022-12-03T19:23:34+03:00</lastmod>
-  </url><url>
-    <loc>https://naavlad.ru/authors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://naavlad.ru/ru/authors/"
-                />
+    <loc>https://naavlad.ru/ru/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://naavlad.ru/authors/"
                 />
-  </url><url>
-    <loc>https://naavlad.ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/categories/"
+                href="https://naavlad.ru/ru/authors/"
                 />
+  </url><url>
+    <loc>https://naavlad.ru/ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://naavlad.ru/categories/"
                 />
-  </url><url>
-    <loc>https://naavlad.ru/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/"
+                href="https://naavlad.ru/ru/categories/"
                 />
+  </url><url>
+    <loc>https://naavlad.ru/ru/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://naavlad.ru/"
                 />
-  </url><url>
-    <loc>https://naavlad.ru/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/series/"
+                href="https://naavlad.ru/ru/"
                 />
+  </url><url>
+    <loc>https://naavlad.ru/ru/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://naavlad.ru/series/"
                 />
-  </url><url>
-    <loc>https://naavlad.ru/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/tags/"
+                href="https://naavlad.ru/ru/series/"
                 />
+  </url><url>
+    <loc>https://naavlad.ru/ru/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://naavlad.ru/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://naavlad.ru/ru/tags/"
                 />
   </url>
 </urlset>
