@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://naavlad.ru/ru/contacts/</loc>
+    <loc>https://naavlad.ru/contacts/</loc>
     <lastmod>2022-12-03T19:24:13+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -12,10 +12,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/contacts/"
+                href="https://naavlad.ru/contacts/"
                 />
   </url><url>
-    <loc>https://naavlad.ru/ru/about/</loc>
+    <loc>https://naavlad.ru/about/</loc>
     <lastmod>2022-12-03T19:23:34+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -25,13 +25,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/about/"
+                href="https://naavlad.ru/about/"
                 />
   </url><url>
-    <loc>https://naavlad.ru/ru/tags/blog/</loc>
+    <loc>https://naavlad.ru/tags/blog/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/ru/</loc>
+    <loc>https://naavlad.ru/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -41,13 +41,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/"
+                href="https://naavlad.ru/"
                 />
   </url><url>
-    <loc>https://naavlad.ru/ru/posts/</loc>
+    <loc>https://naavlad.ru/posts/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/ru/tags/</loc>
+    <loc>https://naavlad.ru/tags/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -57,22 +57,22 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/tags/"
+                href="https://naavlad.ru/tags/"
                 />
   </url><url>
-    <loc>https://naavlad.ru/ru/posts/moving-blog/</loc>
+    <loc>https://naavlad.ru/posts/moving-blog/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</loc>
+    <loc>https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/ru/projects/personal-blog/</loc>
+    <loc>https://naavlad.ru/projects/personal-blog/</loc>
     <lastmod>2021-06-19T15:27:19+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/ru/projects/</loc>
+    <loc>https://naavlad.ru/projects/</loc>
     <lastmod>2021-06-19T15:27:19+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/ru/authors/</loc>
+    <loc>https://naavlad.ru/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,10 +81,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/authors/"
+                href="https://naavlad.ru/authors/"
                 />
   </url><url>
-    <loc>https://naavlad.ru/ru/categories/</loc>
+    <loc>https://naavlad.ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -93,10 +93,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/categories/"
+                href="https://naavlad.ru/categories/"
                 />
   </url><url>
-    <loc>https://naavlad.ru/ru/series/</loc>
+    <loc>https://naavlad.ru/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -105,7 +105,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://naavlad.ru/ru/series/"
+                href="https://naavlad.ru/series/"
                 />
   </url>
 </urlset>
