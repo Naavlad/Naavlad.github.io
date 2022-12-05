@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>naavlad.ru</title>
+    <link>https://naavlad.ru/en/</link>
+    <description>Recent content on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language><atom:link href="https://naavlad.ru/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contacts</title>
+      <link>https://naavlad.ru/en/contacts/</link>
+      <pubDate>Mon, 05 Dec 2022 14:36:29 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/en/contacts/</guid>
+      <description>@naavlad
+ info@naavlad.ru</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://naavlad.ru/en/about/</link>
+      <pubDate>Mon, 05 Dec 2022 14:35:03 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/en/about/</guid>
+      <description>I develop Rest API for web applications and services in python. I set up infrastructure for web projects. I help businesses develop 💰 and users become happier 🎁.
+I managed the direction of FMCG. Organized the business processes of the enterprise, built a KPI system from scratch, carried out ISO 9001 certification and rebuilt the credit system.
+Since 2008 began to study complex financial instruments and trade on the NYSE, NASDAQ.</description>
+    </item>
+    
+  </channel>
+</rss>
