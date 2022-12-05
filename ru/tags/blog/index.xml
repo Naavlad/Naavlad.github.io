@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on naavlad.ru</title>
+    <link>https://naavlad.ru/ru/tags/blog/</link>
+    <description>Recent content in blog on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Fri, 02 Dec 2022 15:32:45 +0300</lastBuildDate><atom:link href="https://naavlad.ru/ru/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Переезд блога, возможно окончательный.</title>
+      <link>https://naavlad.ru/ru/posts/moving-blog/</link>
+      <pubDate>Fri, 02 Dec 2022 15:32:45 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/ru/posts/moving-blog/</guid>
+      <description>С момента последнего переезда этого блога прошло два года.
+За это время перепробовал несколько основных CMS, потом я написал свой блог на Django с Vue.js и смог убедится, что переход на свою конфигурацию никак не помог ведению блога и написанию постов, но даже имел противоположный эффект.
+Странно, что такая технология прошла мимо моего внимания, точнее, в какой то момент, была отвергнута в пользу других вариантов.
+Весь блог теперь живет на github.</description>
+    </item>
+    
+  </channel>
+</rss>
