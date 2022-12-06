@@ -76,6 +76,18 @@
                 href="https://naavlad.ru/en/series/"
                 />
   </url><url>
+    <loc>https://naavlad.ru/en/statuses/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://naavlad.ru/statuses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naavlad.ru/en/statuses/"
+                />
+  </url><url>
     <loc>https://naavlad.ru/en/tags/</loc>
     <xhtml:link
                 rel="alternate"

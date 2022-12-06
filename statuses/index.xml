@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statuses on naavlad.ru</title>
+    <link>https://naavlad.ru/statuses/</link>
+    <description>Recent content in Statuses on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Tue, 06 Dec 2022 16:05:17 +0300</lastBuildDate><atom:link href="https://naavlad.ru/statuses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Completed</title>
+      <link>https://naavlad.ru/statuses/completed/</link>
+      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/statuses/completed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iteration</title>
+      <link>https://naavlad.ru/statuses/iteration/</link>
+      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/statuses/iteration/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

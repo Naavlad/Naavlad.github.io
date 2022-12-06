@@ -6,7 +6,19 @@
     <description>Recent content in Posts on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 02 Dec 2022 15:32:45 +0300</lastBuildDate><atom:link href="https://naavlad.ru/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 18:04:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML в ритейле.</title>
+      <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
+      <pubDate>Tue, 06 Dec 2022 18:04:44 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/machine-learning-plans-demand/</guid>
+      <description>Наша команда baigem.ru выступили экспертами при написании статьи о ML в ритейле.
+Мы попытались рассказать об особенностях краткосрочного планирования спроса и о типичных ML задачах в этой сфере.
+При написании статьи получился неожиданно жарким спор, относительно сущностей в цепочках поставок. Есть производитель, дистрибьютор, ритейлер. В «сферическом вакууме» больше всего в планировании спроса заинтересован ритейлер.
+Но в реальном бизнесе в России и СНГ эта задача обычно на дистрибьюторе. Хорошо это или плохо, но такова реальность и, к сожалению, многие не понимают этой специфики при попытке создать решения.</description>
+    </item>
+    
     <item>
       <title>Переезд блога, возможно окончательный.</title>
       <link>https://naavlad.ru/posts/moving-blog/</link>

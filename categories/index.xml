@@ -5,6 +5,25 @@
     <link>https://naavlad.ru/categories/</link>
     <description>Recent content in Categories on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language><atom:link href="https://naavlad.ru/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ru</language>
+    <lastBuildDate>Tue, 06 Dec 2022 18:04:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning</title>
+      <link>https://naavlad.ru/categories/machine-learning/</link>
+      <pubDate>Tue, 06 Dec 2022 18:04:44 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weekly Projects</title>
+      <link>https://naavlad.ru/categories/weekly-projects/</link>
+      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/categories/weekly-projects/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

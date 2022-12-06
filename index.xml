@@ -6,7 +6,28 @@
     <description>Recent content on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 02 Dec 2022 15:32:45 +0300</lastBuildDate><atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 18:04:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML в ритейле.</title>
+      <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
+      <pubDate>Tue, 06 Dec 2022 18:04:44 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/machine-learning-plans-demand/</guid>
+      <description>Наша команда baigem.ru выступили экспертами при написании статьи о ML в ритейле.
+Мы попытались рассказать об особенностях краткосрочного планирования спроса и о типичных ML задачах в этой сфере.
+При написании статьи получился неожиданно жарким спор, относительно сущностей в цепочках поставок. Есть производитель, дистрибьютор, ритейлер. В «сферическом вакууме» больше всего в планировании спроса заинтересован ритейлер.
+Но в реальном бизнесе в России и СНГ эта задача обычно на дистрибьюторе. Хорошо это или плохо, но такова реальность и, к сожалению, многие не понимают этой специфики при попытке создать решения.</description>
+    </item>
+    
+    <item>
+      <title>Личный блог</title>
+      <link>https://naavlad.ru/projects/personal-blog/</link>
+      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/projects/personal-blog/</guid>
+      <description>Переезд на Hugo  Link to heading   </description>
+    </item>
+    
     <item>
       <title>Contacts</title>
       <link>https://naavlad.ru/contacts/</link>
@@ -40,15 +61,6 @@
 За это время перепробовал несколько основных CMS, потом я написал свой блог на Django с Vue.js и смог убедится, что переход на свою конфигурацию никак не помог ведению блога и написанию постов, но даже имел противоположный эффект.
 Странно, что такая технология прошла мимо моего внимания, точнее, в какой то момент, была отвергнута в пользу других вариантов.
 Весь блог теперь живет на github.</description>
-    </item>
-    
-    <item>
-      <title>Personal Blog</title>
-      <link>https://naavlad.ru/projects/personal-blog/</link>
-      <pubDate>Sat, 19 Jun 2021 15:27:19 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/projects/personal-blog/</guid>
-      <description></description>
     </item>
     
   </channel>
