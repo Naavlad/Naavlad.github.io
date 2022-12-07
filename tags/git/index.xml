@@ -6,7 +6,19 @@
     <description>Recent content in Git on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 07 Dec 2022 13:37:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 14:16:12 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
+      <link>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</link>
+      <pubDate>Wed, 07 Dec 2022 14:16:12 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</guid>
+      <description>Если вы еще не запустили
+git rm --cached path_to_submodule rm -rf path_to_submodule Из .gitmodules file. удалить:
+[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Из .git/config. удалить:
+[submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
+    </item>
+    
     <item>
       <title>Git submodule: &#39;already exists in the index&#39;</title>
       <link>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</link>

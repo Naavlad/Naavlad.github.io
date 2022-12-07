@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://naavlad.ru/tags/git/</loc>
-    <lastmod>2022-12-07T13:37:44+03:00</lastmod>
+    <lastmod>2022-12-07T14:16:12+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,58 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://naavlad.ru/tags/git/"
+                />
+  </url><url>
+    <loc>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</loc>
+    <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/"
+                />
+  </url><url>
+    <loc>https://naavlad.ru/issues/</loc>
+    <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naavlad.ru/en/issues/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://naavlad.ru/issues/"
+                />
+  </url><url>
+    <loc>https://naavlad.ru/</loc>
+    <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naavlad.ru/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://naavlad.ru/"
+                />
+  </url><url>
+    <loc>https://naavlad.ru/tags/</loc>
+    <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://naavlad.ru/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://naavlad.ru/tags/"
                 />
   </url><url>
     <loc>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</loc>
@@ -26,45 +78,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://naavlad.ru/issues/git-submodule-already-exists-in-index/"
-                />
-  </url><url>
-    <loc>https://naavlad.ru/issues/</loc>
-    <lastmod>2022-12-07T13:37:44+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://naavlad.ru/en/issues/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://naavlad.ru/issues/"
-                />
-  </url><url>
-    <loc>https://naavlad.ru/</loc>
-    <lastmod>2022-12-07T13:37:44+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://naavlad.ru/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://naavlad.ru/"
-                />
-  </url><url>
-    <loc>https://naavlad.ru/tags/</loc>
-    <lastmod>2022-12-07T13:37:44+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://naavlad.ru/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://naavlad.ru/tags/"
                 />
   </url><url>
     <loc>https://naavlad.ru/categories/</loc>

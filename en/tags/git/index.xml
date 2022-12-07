@@ -6,7 +6,20 @@
     <description>Recent content in Git on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 07 Dec 2022 13:47:56 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
+      <link>https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/</link>
+      <pubDate>Wed, 07 Dec 2022 14:16:20 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/</guid>
+      <description>If you haven&amp;rsquo;t already run
+git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule Then:
+Delete the relevant lines from the .gitmodules file. e.g. delete these:
+[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Delete the relevant section from .git/config. e.g. delete these:
+[submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
+    </item>
+    
     <item>
       <title>Git Submodule Already Exists in Index</title>
       <link>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</link>
