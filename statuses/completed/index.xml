@@ -16,5 +16,14 @@
       <description>Переезд на Hugo  Link to heading   </description>
     </item>
     
+    <item>
+      <title>Рекомендательная система для игрового магазина.</title>
+      <link>https://naavlad.ru/projects/recommender-system/</link>
+      <pubDate>Tue, 21 Jun 2022 19:00:59 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/projects/recommender-system/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

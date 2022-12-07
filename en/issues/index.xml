@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Issues on naavlad.ru</title>
+    <link>https://naavlad.ru/en/issues/</link>
+    <description>Recent content in Issues on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 07 Dec 2022 13:47:56 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/issues/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Submodule Already Exists in Index</title>
+      <link>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</link>
+      <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</guid>
+      <description>That error means that projectfolder is already staged (&amp;ldquo;already exists in the index&amp;rdquo;). To find out what&amp;rsquo;s going on here, try to list everything in the index under that folder with:
+git ls-files --stage projectfolder The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
+I suspect that you will see something like:</description>
+    </item>
+    
+  </channel>
+</rss>

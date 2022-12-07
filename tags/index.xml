@@ -6,7 +6,16 @@
     <description>Recent content in Tags on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 06 Dec 2022 18:04:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 13:37:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://naavlad.ru/tags/git/</link>
+      <pubDate>Wed, 07 Dec 2022 13:37:44 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/tags/git/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ML blog</title>
       <link>https://naavlad.ru/tags/ml-blog/</link>
@@ -40,6 +49,15 @@
       <pubDate>Fri, 02 Dec 2022 15:32:45 +0300</pubDate>
       
       <guid>https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>https://naavlad.ru/tags/projects/</link>
+      <pubDate>Tue, 21 Jun 2022 19:00:59 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/tags/projects/</guid>
       <description></description>
     </item>
     
