@@ -21,7 +21,7 @@ Delete the relevant lines from the .gitmodules file. e.g. delete these:
     </item>
     
     <item>
-      <title>Git Submodule Already Exists in Index</title>
+      <title>Git submodule: &#39;already exists in the index&#39;</title>
       <link>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</link>
       <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
       
