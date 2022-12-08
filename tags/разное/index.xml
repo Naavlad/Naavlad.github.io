@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>разное on naavlad.ru</title>
-    <link>https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</link>
-    <description>Recent content in разное on naavlad.ru</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Fri, 02 Dec 2022 15:32:45 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Переезд блога, возможно окончательный.</title>
-      <link>https://naavlad.ru/posts/moving-blog/</link>
-      <pubDate>Fri, 02 Dec 2022 15:32:45 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/posts/moving-blog/</guid>
-      <description>С момента последнего переезда этого блога прошло два года.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>разное - Тэг - naavlad.ru</title>
+        <link>https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</link>
+        <description>разное - Тэг - naavlad.ru</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Dec 2022 15:32:45 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/" rel="self" type="application/rss+xml" /><item>
+    <title>Переезд блога, возможно окончательный.</title>
+    <link>https://naavlad.ru/posts/moving-blog/</link>
+    <pubDate>Fri, 02 Dec 2022 15:32:45 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/moving-blog/</guid>
+    <description><![CDATA[С момента последнего переезда этого блога прошло два года.
 За это время перепробовал несколько основных CMS, потом я написал свой блог на Django с Vue.js и смог убедится, что переход на свою конфигурацию никак не помог ведению блога и написанию постов, но даже имел противоположный эффект.
 Странно, что такая технология прошла мимо моего внимания, точнее, в какой то момент, была отвергнута в пользу других вариантов.
-Весь блог теперь живет на github.</description>
-    </item>
-    
-  </channel>
+Весь блог теперь живет на github.]]></description>
+</item>
+</channel>
 </rss>

@@ -1,100 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>naavlad.ru</title>
-    <link>https://naavlad.ru/</link>
-    <description>Recent content on naavlad.ru</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Wed, 07 Dec 2022 14:16:12 +0300</lastBuildDate><atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
-      <link>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</link>
-      <pubDate>Wed, 07 Dec 2022 14:16:12 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</guid>
-      <description>Если вы еще не запустили
-git rm --cached path_to_submodule rm -rf path_to_submodule Из .gitmodules file. удалить:
-[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Из .git/config. удалить:
-[submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
-    </item>
-    
-    <item>
-      <title>Git submodule: &#39;already exists in the index&#39;</title>
-      <link>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</link>
-      <pubDate>Wed, 07 Dec 2022 13:37:44 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</guid>
-      <description>Эта ошибка означает, что папка проекта уже существует в индексе. Смотрим, что есть в индексе:
-git ls-files --stage projectfolder Первый столбец - тип объекта в индексе в projectfolder.
-Я подозреваю, что вы увидите что-то вроде:
-160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0 projectfolder (т.е. строка, начинающаяся с 160000), и в этом случае репозиторий в projectfolder уже добавлен как &amp;ldquo;gitlink&amp;rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</description>
-    </item>
-    
-    <item>
-      <title>ML в ритейле.</title>
-      <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
-      <pubDate>Tue, 06 Dec 2022 18:04:44 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/posts/machine-learning-plans-demand/</guid>
-      <description>Наша команда baigem.ru выступили экспертами при написании статьи о ML в ритейле.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>naavlad.ru</title>
+        <link>https://naavlad.ru/</link>
+        <description>Napalkov Andrey&#39;s personal website</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Dec 2022 14:16:12 &#43;0300</lastBuildDate>
+            <atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>ML в ритейле.</title>
+    <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
+    <pubDate>Tue, 06 Dec 2022 18:04:44 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/machine-learning-plans-demand/</guid>
+    <description><![CDATA[Наша команда baigem.ru выступили экспертами при написании статьи о ML в ритейле.
 Мы попытались рассказать об особенностях краткосрочного планирования спроса и о типичных ML задачах в этой сфере.
 При написании статьи получился неожиданно жарким спор, относительно сущностей в цепочках поставок. Есть производитель, дистрибьютор, ритейлер. В «сферическом вакууме» больше всего в планировании спроса заинтересован ритейлер.
-Но в реальном бизнесе в России и СНГ эта задача обычно на дистрибьюторе. Хорошо это или плохо, но такова реальность и, к сожалению, многие не понимают этой специфики при попытке создать решения.</description>
-    </item>
-    
-    <item>
-      <title>Личный блог</title>
-      <link>https://naavlad.ru/projects/personal-blog/</link>
-      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/projects/personal-blog/</guid>
-      <description>Переезд на Hugo  Link to heading   </description>
-    </item>
-    
-    <item>
-      <title>Contacts</title>
-      <link>https://naavlad.ru/contacts/</link>
-      <pubDate>Sat, 03 Dec 2022 19:24:13 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/contacts/</guid>
-      <description>@naavlad
- info@naavlad.ru</description>
-    </item>
-    
-    <item>
-      <title>Коротко о себе</title>
-      <link>https://naavlad.ru/about/</link>
-      <pubDate>Sat, 03 Dec 2022 19:23:34 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/about/</guid>
-      <description>Разрабатываю Rest API для веб-приложений и сервисов на python.
-Настраиваю инфраструктуру для веб-проектов.
-Помогаю бизнесу развиваться 💰, а пользователям — становиться счастливее 🎁.
-В прошлой жизни руководил направлением FMCG. Организовывал Бизнесс-процессы предприятия, постоил с нуля систему KPI, провел сертификацию ISO 9001 и перестроил систему кредитования.
-Начиная с 2008г. стал изучать сложные финансовые инструменты и торговать на площадках NYSE, NASDAQ. Увлечение переросло в нечто большее и продолжилось построением сложных опционных позиций на NYSE, NASDAQ, CME.</description>
-    </item>
-    
-    <item>
-      <title>Переезд блога, возможно окончательный.</title>
-      <link>https://naavlad.ru/posts/moving-blog/</link>
-      <pubDate>Fri, 02 Dec 2022 15:32:45 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/posts/moving-blog/</guid>
-      <description>С момента последнего переезда этого блога прошло два года.
+Но в реальном бизнесе в России и СНГ эта задача обычно на дистрибьюторе. Хорошо это или плохо, но такова реальность и, к сожалению, многие не понимают этой специфики при попытке создать решения.]]></description>
+</item>
+<item>
+    <title>Переезд блога, возможно окончательный.</title>
+    <link>https://naavlad.ru/posts/moving-blog/</link>
+    <pubDate>Fri, 02 Dec 2022 15:32:45 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/moving-blog/</guid>
+    <description><![CDATA[С момента последнего переезда этого блога прошло два года.
 За это время перепробовал несколько основных CMS, потом я написал свой блог на Django с Vue.js и смог убедится, что переход на свою конфигурацию никак не помог ведению блога и написанию постов, но даже имел противоположный эффект.
 Странно, что такая технология прошла мимо моего внимания, точнее, в какой то момент, была отвергнута в пользу других вариантов.
-Весь блог теперь живет на github.</description>
-    </item>
-    
-    <item>
-      <title>Рекомендательная система для игрового магазина.</title>
-      <link>https://naavlad.ru/projects/recommender-system/</link>
-      <pubDate>Tue, 21 Jun 2022 19:00:59 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/projects/recommender-system/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+Весь блог теперь живет на github.]]></description>
+</item>
+</channel>
 </rss>

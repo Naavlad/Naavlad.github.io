@@ -1,56 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>naavlad.ru</title>
-    <link>https://naavlad.ru/en/</link>
-    <description>Recent content on naavlad.ru</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
-      <link>https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/</link>
-      <pubDate>Wed, 07 Dec 2022 14:16:20 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/</guid>
-      <description>If you haven&amp;rsquo;t already run
-git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule Then:
-Delete the relevant lines from the .gitmodules file. e.g. delete these:
-[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Delete the relevant section from .git/config. e.g. delete these:
-[submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
-    </item>
-    
-    <item>
-      <title>Git submodule: &#39;already exists in the index&#39;</title>
-      <link>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</link>
-      <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</guid>
-      <description>That error means that projectfolder is already staged (&amp;ldquo;already exists in the index&amp;rdquo;). To find out what&amp;rsquo;s going on here, try to list everything in the index under that folder with:
-git ls-files --stage projectfolder The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
-I suspect that you will see something like:</description>
-    </item>
-    
-    <item>
-      <title>Contacts</title>
-      <link>https://naavlad.ru/en/contacts/</link>
-      <pubDate>Mon, 05 Dec 2022 14:36:29 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/en/contacts/</guid>
-      <description>@naavlad
- info@naavlad.ru</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://naavlad.ru/en/about/</link>
-      <pubDate>Mon, 05 Dec 2022 14:35:03 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/en/about/</guid>
-      <description>I develop Rest API for web applications and services in python. I set up infrastructure for web projects. I help businesses develop 💰 and users become happier 🎁.
-I managed the direction of FMCG. Organized the business processes of the enterprise, built a KPI system from scratch, carried out ISO 9001 certification and rebuilt the credit system.
-Since 2008 began to study complex financial instruments and trade on the NYSE, NASDAQ.</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>naavlad.ru</title>
+        <link>https://naavlad.ru/en/</link>
+        <description>Napalkov Andrey&#39;s personal website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Dec 2022 14:16:20 &#43;0300</lastBuildDate>
+            <atom:link href="https://naavlad.ru/en/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
 </rss>

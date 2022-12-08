@@ -6,23 +6,17 @@
     <description>Recent content in Projects on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+    <webMaster>info@naavlad.ru (naavlad)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Tue, 06 Dec 2022 16:05:17 +0300</lastBuildDate><atom:link href="https://naavlad.ru/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Личный блог</title>
       <link>https://naavlad.ru/projects/personal-blog/</link>
       <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
-      
+      <author>info@naavlad.ru (naavlad)</author>
       <guid>https://naavlad.ru/projects/personal-blog/</guid>
-      <description>Переезд на Hugo  Link to heading   </description>
-    </item>
-    
-    <item>
-      <title>Рекомендательная система для игрового магазина.</title>
-      <link>https://naavlad.ru/projects/recommender-system/</link>
-      <pubDate>Tue, 21 Jun 2022 19:00:59 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/projects/recommender-system/</guid>
-      <description></description>
+      <description>Переезд на Hugo </description>
     </item>
     
   </channel>

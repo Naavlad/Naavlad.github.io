@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Machine Learning on naavlad.ru</title>
-    <link>https://naavlad.ru/categories/machine-learning/</link>
-    <description>Recent content in Machine Learning on naavlad.ru</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Tue, 06 Dec 2022 18:04:44 +0300</lastBuildDate><atom:link href="https://naavlad.ru/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ML в ритейле.</title>
-      <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
-      <pubDate>Tue, 06 Dec 2022 18:04:44 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/posts/machine-learning-plans-demand/</guid>
-      <description>Наша команда baigem.ru выступили экспертами при написании статьи о ML в ритейле.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Machine Learning - Категория - naavlad.ru</title>
+        <link>https://naavlad.ru/categories/machine-learning/</link>
+        <description>Machine Learning - Категория - naavlad.ru</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Dec 2022 18:04:44 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/categories/machine-learning/" rel="self" type="application/rss+xml" /><item>
+    <title>ML в ритейле.</title>
+    <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
+    <pubDate>Tue, 06 Dec 2022 18:04:44 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/machine-learning-plans-demand/</guid>
+    <description><![CDATA[Наша команда baigem.ru выступили экспертами при написании статьи о ML в ритейле.
 Мы попытались рассказать об особенностях краткосрочного планирования спроса и о типичных ML задачах в этой сфере.
 При написании статьи получился неожиданно жарким спор, относительно сущностей в цепочках поставок. Есть производитель, дистрибьютор, ритейлер. В «сферическом вакууме» больше всего в планировании спроса заинтересован ритейлер.
-Но в реальном бизнесе в России и СНГ эта задача обычно на дистрибьюторе. Хорошо это или плохо, но такова реальность и, к сожалению, многие не понимают этой специфики при попытке создать решения.</description>
-    </item>
-    
-  </channel>
+Но в реальном бизнесе в России и СНГ эта задача обычно на дистрибьюторе. Хорошо это или плохо, но такова реальность и, к сожалению, многие не понимают этой специфики при попытке создать решения.]]></description>
+</item>
+</channel>
 </rss>

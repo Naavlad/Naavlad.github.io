@@ -5,29 +5,32 @@
     <link>https://naavlad.ru/en/issues/</link>
     <description>Recent content in Issues on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
+    <language>en</language>
+    <managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+    <webMaster>info@naavlad.ru (naavlad)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/issues/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
       <link>https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/</link>
       <pubDate>Wed, 07 Dec 2022 14:16:20 +0300</pubDate>
-      
+      <author>info@naavlad.ru (naavlad)</author>
       <guid>https://naavlad.ru/en/issues/git-submodule-add-git-directory-is-found-locally/</guid>
       <description>If you haven&amp;rsquo;t already run
-git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule Then:
+1 2  git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule   Then:
 Delete the relevant lines from the .gitmodules file. e.g. delete these:
-[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Delete the relevant section from .git/config. e.g. delete these:
-[submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
+1 2 3  [submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule   Delete the relevant section from .git/config. e.g. delete these:
+1 2  [submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule   1  rm -rf .</description>
     </item>
     
     <item>
       <title>Git submodule: &#39;already exists in the index&#39;</title>
       <link>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</link>
       <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
-      
+      <author>info@naavlad.ru (naavlad)</author>
       <guid>https://naavlad.ru/en/issues/git-submodule-already-exists-in-index/</guid>
       <description>That error means that projectfolder is already staged (&amp;ldquo;already exists in the index&amp;rdquo;). To find out what&amp;rsquo;s going on here, try to list everything in the index under that folder with:
-git ls-files --stage projectfolder The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
+1  git ls-files --stage projectfolder   The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
 I suspect that you will see something like:</description>
     </item>
     
