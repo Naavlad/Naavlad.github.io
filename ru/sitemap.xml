@@ -2,6 +2,38 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://naavlad.ru/categories/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://naavlad.ru/en/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="ru"
+                    href="https://naavlad.ru/categories/"
+                    /></url><url>
+            <loc>https://naavlad.ru/tags/hugo/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/categories/hugo-building-websites/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://naavlad.ru/en/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="ru"
+                    href="https://naavlad.ru/"
+                    /></url><url>
+            <loc>https://naavlad.ru/posts/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/tags/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://naavlad.ru/en/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="ru"
+                    href="https://naavlad.ru/tags/"
+                    /></url><url>
+            <loc>https://naavlad.ru/tags/theme/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/posts/theme-rebuilding/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/about/</loc><lastmod>2022-12-08T16:27:36&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/git/</loc><lastmod>2022-12-07T14:16:12&#43;03:00</lastmod><xhtml:link
                         rel="alternate"
@@ -30,24 +62,6 @@
                     hreflang="ru"
                     href="https://naavlad.ru/issues/"
                     /></url><url>
-            <loc>https://naavlad.ru/</loc><lastmod>2022-12-07T14:16:12&#43;03:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://naavlad.ru/en/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="ru"
-                    href="https://naavlad.ru/"
-                    /></url><url>
-            <loc>https://naavlad.ru/tags/</loc><lastmod>2022-12-07T14:16:12&#43;03:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://naavlad.ru/en/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="ru"
-                    href="https://naavlad.ru/tags/"
-                    /></url><url>
             <loc>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</loc><lastmod>2022-12-07T13:37:44&#43;03:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -57,19 +71,9 @@
                     hreflang="ru"
                     href="https://naavlad.ru/issues/git-submodule-already-exists-in-index/"
                     /></url><url>
-            <loc>https://naavlad.ru/categories/</loc><lastmod>2022-12-06T18:04:44&#43;03:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://naavlad.ru/en/categories/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="ru"
-                    href="https://naavlad.ru/categories/"
-                    /></url><url>
             <loc>https://naavlad.ru/categories/machine-learning/</loc><lastmod>2022-12-06T18:04:44&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/ml-blog/</loc><lastmod>2022-12-06T18:04:44&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/posts/machine-learning-plans-demand/</loc><lastmod>2022-12-06T18:04:44&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/posts/</loc><lastmod>2022-12-06T18:04:44&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/media/</loc><lastmod>2022-12-06T16:05:17&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/projects/</loc><lastmod>2022-12-06T16:05:17&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/categories/weekly-projects/</loc><lastmod>2022-12-06T16:05:17&#43;03:00</lastmod></url><url>

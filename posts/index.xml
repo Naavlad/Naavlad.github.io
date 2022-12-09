@@ -4,7 +4,15 @@
         <link>https://naavlad.ru/posts/</link>
         <description>Все Статьи | naavlad.ru</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Dec 2022 18:04:44 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Переработка и изменение темы hugo.</title>
+    <link>https://naavlad.ru/posts/theme-rebuilding/</link>
+    <pubDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/theme-rebuilding/</guid>
+    <description><![CDATA[Изменение темы hugo website, переработка HTML]]></description>
+</item>
+<item>
     <title>ML в ритейле.</title>
     <link>https://naavlad.ru/posts/machine-learning-plans-demand/</link>
     <pubDate>Tue, 06 Dec 2022 18:04:44 &#43;0300</pubDate>

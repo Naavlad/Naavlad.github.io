@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo building websites - Категория - naavlad.ru</title>
+        <link>https://naavlad.ru/categories/hugo-building-websites/</link>
+        <description>Hugo building websites - Категория - naavlad.ru</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/categories/hugo-building-websites/" rel="self" type="application/rss+xml" /><item>
+    <title>Переработка и изменение темы hugo.</title>
+    <link>https://naavlad.ru/posts/theme-rebuilding/</link>
+    <pubDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/theme-rebuilding/</guid>
+    <description><![CDATA[Изменение темы hugo website, переработка HTML]]></description>
+</item>
+</channel>
+</rss>
