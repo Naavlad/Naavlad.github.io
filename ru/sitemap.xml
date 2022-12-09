@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://naavlad.ru/tags/blog/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/categories/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -12,7 +13,7 @@
                     href="https://naavlad.ru/categories/"
                     /></url><url>
             <loc>https://naavlad.ru/tags/hugo/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/categories/hugo-building-websites/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/categories/hugo-websites/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -33,7 +34,7 @@
                     href="https://naavlad.ru/tags/"
                     /></url><url>
             <loc>https://naavlad.ru/tags/theme/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/posts/theme-rebuilding/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/posts/hugo/theme-rebuilding/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/about/</loc><lastmod>2022-12-08T16:27:36&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/git/</loc><lastmod>2022-12-07T14:16:12&#43;03:00</lastmod><xhtml:link
                         rel="alternate"
@@ -78,6 +79,5 @@
             <loc>https://naavlad.ru/projects/</loc><lastmod>2022-12-06T16:05:17&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/categories/weekly-projects/</loc><lastmod>2022-12-06T16:05:17&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/projects/personal-blog/</loc><lastmod>2022-12-06T16:05:17&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/tags/blog/</loc><lastmod>2022-12-02T15:32:45&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/posts/moving-blog/</loc><lastmod>2022-12-02T15:32:45&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/posts/hugo/moving-blog/</loc><lastmod>2022-12-02T15:32:45&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</loc><lastmod>2022-12-02T15:32:45&#43;03:00</lastmod></url></urlset>
