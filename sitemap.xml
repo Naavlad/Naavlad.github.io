@@ -2,13 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://naavlad.ru/categories/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/tags/hugo/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/categories/hugo-websites/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/posts/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/tags/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/tags/taxonomies/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
+            <loc>https://naavlad.ru/posts/hugo/contents/taxonomies/</loc><lastmod>2022-12-13T17:52:47&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/blog/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/categories/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/tags/hugo/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/categories/hugo-websites/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/posts/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
-            <loc>https://naavlad.ru/tags/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/tags/theme/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/posts/hugo/templates/homepage/</loc><lastmod>2022-12-13T09:17:26&#43;03:00</lastmod></url><url>
             <loc>https://naavlad.ru/posts/hugo/theme-rebuilding/</loc><lastmod>2022-12-09T11:14:51&#43;03:00</lastmod></url><url>

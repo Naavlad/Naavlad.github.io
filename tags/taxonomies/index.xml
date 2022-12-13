@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>taxonomies - Тэг - naavlad.ru</title>
+        <link>https://naavlad.ru/tags/taxonomies/</link>
+        <description>taxonomies - Тэг - naavlad.ru</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/taxonomies/" rel="self" type="application/rss+xml" /><item>
+    <title>Таксоно́мия в Hugo(Taxonomies).</title>
+    <link>https://naavlad.ru/posts/hugo/contents/taxonomies/</link>
+    <pubDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/hugo/contents/taxonomies/</guid>
+    <description><![CDATA[Что такое таксономия? Таксоно́мия - Математически таксономией является древообразная структура классификаций определённого набора объектов.
+Hugo включает поддержку определяемых пользователем групп контента, называемых таксономиями. Таксономии — это классификации логических отношений между контентом.
+Taxonomy - категоризация, которую можно использовать для классификации контента.
+Term - ключ таксономии.
+Value - часть контента, по ключу Term
+Пример таксономии: веб-сайт фильма Предположим, вы делаете сайт о фильмах. Вы можете включить следующие таксономии:
+ Actors Directors Studios Genre Year Awards  Затем в каждом из фильмов вы должны указать термины для каждой из этих таксономий (т.]]></description>
+</item>
+</channel>
+</rss>

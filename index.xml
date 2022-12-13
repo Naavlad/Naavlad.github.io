@@ -4,9 +4,23 @@
         <link>https://naavlad.ru/</link>
         <description>Napalkov Andrey&#39;s personal website</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 13 Dec 2022 09:17:26 &#43;0300</lastBuildDate>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</lastBuildDate>
             <atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Таксоно́мия в Hugo(Taxonomies).</title>
+    <link>https://naavlad.ru/posts/hugo/contents/taxonomies/</link>
+    <pubDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/hugo/contents/taxonomies/</guid>
+    <description><![CDATA[Что такое таксономия? Таксоно́мия - Математически таксономией является древообразная структура классификаций определённого набора объектов.
+Hugo включает поддержку определяемых пользователем групп контента, называемых таксономиями. Таксономии — это классификации логических отношений между контентом.
+Taxonomy - категоризация, которую можно использовать для классификации контента.
+Term - ключ таксономии.
+Value - часть контента, по ключу Term
+Пример таксономии: веб-сайт фильма Предположим, вы делаете сайт о фильмах. Вы можете включить следующие таксономии:
+ Actors Directors Studios Genre Year Awards  Затем в каждом из фильмов вы должны указать термины для каждой из этих таксономий (т.]]></description>
+</item>
+<item>
     <title>Домашняя страница(Homepage Template).</title>
     <link>https://naavlad.ru/posts/hugo/templates/homepage/</link>
     <pubDate>Tue, 13 Dec 2022 09:17:26 &#43;0300</pubDate>
