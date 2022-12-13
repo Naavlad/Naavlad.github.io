@@ -4,7 +4,17 @@
         <link>https://naavlad.ru/tags/blog/</link>
         <description>blog - Тэг - naavlad.ru</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/blog/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 13 Dec 2022 09:17:26 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/blog/" rel="self" type="application/rss+xml" /><item>
+    <title>Домашняя страница(Homepage Template).</title>
+    <link>https://naavlad.ru/posts/hugo/templates/homepage/</link>
+    <pubDate>Tue, 13 Dec 2022 09:17:26 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/hugo/templates/homepage/</guid>
+    <description><![CDATA[Домашняя страница веб-сайта часто форматируется иначе, чем другие страницы. По этой причине Hugo позволяет легко определить домашнюю страницу сайта как уникальный шаблон.
+ Шаблон домашней страницы — это единственный шаблон, необходимый для создания сайта. Это также единственный необходимый шаблон, если вы разрабатываете одностраничный веб-сайт.
+ Домашняя страница, как и другие страницы в Hugo, принимает содержимое и front matter из файла _index.md. Этот файл должен находиться в корне папки с вашим содержимым (например, content/_index.]]></description>
+</item>
+<item>
     <title>Переработка и изменение темы hugo. Аналитика.</title>
     <link>https://naavlad.ru/posts/hugo/theme-rebuilding/</link>
     <pubDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</pubDate>
