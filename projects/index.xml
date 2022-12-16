@@ -1,22 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects on naavlad.ru</title>
-    <link>https://naavlad.ru/projects/</link>
-    <description>Recent content in Projects on naavlad.ru</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-    <webMaster>info@naavlad.ru (naavlad)</webMaster>
-    <lastBuildDate>Tue, 06 Dec 2022 16:05:17 +0300</lastBuildDate><atom:link href="https://naavlad.ru/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Личный блог</title>
-      <link>https://naavlad.ru/projects/personal-blog/</link>
-      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
-      <author>info@naavlad.ru (naavlad)</author>
-      <guid>https://naavlad.ru/projects/personal-blog/</guid>
-      <description>Переезд на Hugo </description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Projects - project - naavlad.ru</title>
+        <link>https://naavlad.ru/projects/</link>
+        <description>Projects - project - naavlad.ru</description>
+        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><atom:link href="https://naavlad.ru/projects/" rel="self" type="application/rss+xml" /></channel>
 </rss>
