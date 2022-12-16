@@ -6,7 +6,7 @@
       <meta name="robots" content="noodp">
 
       
-      <title>taxonomies - Тэг - naavlad.ru</title>
+      <title>Git submodule: &#39;already exists in the index&#39; - naavlad.ru</title>
       
       <style>
         .page {
@@ -83,30 +83,50 @@ href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.
       </div>
     </div>
   </header>
-  
-<div class="container mt-3 mb-5">
-
-  
-  <div class="mb-5">
-    <h2 class="single-title animate__animated animate__pulse animate__faster"><i class="fas fa-tag fa-fw" aria-hidden="true"></i>&nbsp;taxonomies</h2>
-  </div>
-  
-    <ul class="step">
-
-        <li class="step-item">
-          <div class="step-content-wrapper">
-            <span class="step-icon step-icon-soft-primary">2022</span>
-            
-            <ul><li class="step-content">
-                <a href="/posts/hugo/contents/taxonomies/" class="step-text text-dark">Таксоно́мия в Hugo(Taxonomies).</a>
-                <span class="step-text">12-13</span>
-              </li></ul>
-            
-          </div>
-        </li>
-
-    </ul>
-    </div>
+  <div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Git submodule: &#39;already exists in the index&#39;</h1><div class="content" id="content"><p>Эта ошибка означает, что папка проекта уже существует в индексе.
+Смотрим, что есть в индексе:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git ls-files --stage projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>Первый столбец - тип объекта в индексе в <code>projectfolder</code>.</p>
+<p>Я подозреваю, что вы увидите что-то вроде:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>(т.е. строка, начинающаяся с <code>160000</code>), и в этом случае репозиторий в <code>projectfolder</code> уже добавлен как &ldquo;gitlink&rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git rm --cached projectfolder
+git submodule add url_to_repo projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>Однако также возможно, что вы увидите много больших двоичных объектов в списке (с файловыми режимами <code>100644</code> и <code>100755</code>), что может означать, что вы неправильно удалили файлы в <code> `projectfolder</code> перед копированием нового репозитория.</p>
+<p>В этом случае:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git rm -r --cached projectfolder
+git submodule add url_to_repo projectfolder
+</code></pre></td></tr></table>
+</div>
+</div></div></div>
 
 <footer class="container content-space-1 border-top">
   <div class="row align-items-md-center text-center text-sm-start">

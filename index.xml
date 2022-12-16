@@ -4,9 +4,21 @@
         <link>https://naavlad.ru/</link>
         <description>Napalkov Andrey&#39;s personal website</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</lastBuildDate>
+            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Fri, 16 Dec 2022 09:27:03 &#43;0300</lastBuildDate>
             <atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Как изменить shell в Linux</title>
+    <link>https://naavlad.ru/posts/linux/change-shell/</link>
+    <pubDate>Fri, 16 Dec 2022 09:27:03 &#43;0300</pubDate>
+    <author>naavlad</author>
+    <guid>https://naavlad.ru/posts/linux/change-shell/</guid>
+    <description><![CDATA[Одна из самых популярных командных оболочек — это оболочка Bash (Bourne Again Shell).
+Она используется по умолчанию в большинстве дистрибутивов Linux.
+Посмотреть командную оболочку у пользователя(у разных пользователей могут использоваться разные командные оболочки) можно разными способами.
+В переменной окружения. Переменная окружения SHELL хранит путь до исполняемого файла оболочки.
+1 2 3 4  echo $SHELL /usr/bin/zsh # для zsh /usr/bin/bash # для bash   Через имя текущего работающего процесса Командой echo $0 входит в POSIX standards compliant shells .]]></description>
+</item>
+<item>
     <title>Таксоно́мия в Hugo(Taxonomies).</title>
     <link>https://naavlad.ru/posts/hugo/contents/taxonomies/</link>
     <pubDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</pubDate>

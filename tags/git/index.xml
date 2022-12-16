@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
             <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Wed, 07 Dec 2022 14:16:20 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/git/" rel="self" type="application/rss+xml" /><item>
     <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
-    <link>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally.en/</link>
+    <link>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally.en/</link>
     <pubDate>Wed, 07 Dec 2022 14:16:20 &#43;0300</pubDate>
     <author>naavlad</author>
-    <guid>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally.en/</guid>
+    <guid>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally.en/</guid>
     <description><![CDATA[If you haven&rsquo;t already run
 1 2  git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule   Then:
 Delete the relevant lines from the .gitmodules file. e.g. delete these:
@@ -18,10 +18,10 @@ Delete the relevant lines from the .gitmodules file. e.g. delete these:
 </item>
 <item>
     <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
-    <link>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</link>
+    <link>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</link>
     <pubDate>Wed, 07 Dec 2022 14:16:12 &#43;0300</pubDate>
     <author>naavlad</author>
-    <guid>https://naavlad.ru/issues/git-submodule-add-git-directory-is-found-locally/</guid>
+    <guid>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</guid>
     <description><![CDATA[Если вы еще не запустили
 1 2  git rm --cached path_to_submodule rm -rf path_to_submodule   Из .gitmodules file. удалить:
 1 2 3  [submodule &#34;path_to_submodule&#34;] path = path_to_submodule url = https://github.com/path_to_submodule   Из .git/config. удалить:
@@ -29,20 +29,20 @@ Delete the relevant lines from the .gitmodules file. e.g. delete these:
 </item>
 <item>
     <title>Git submodule: &#39;already exists in the index&#39;</title>
-    <link>https://naavlad.ru/issues/git-submodule-already-exists-in-index.en/</link>
+    <link>https://naavlad.ru/gists/git-submodule-already-exists-in-index.en/</link>
     <pubDate>Wed, 07 Dec 2022 13:47:56 &#43;0300</pubDate>
     <author>naavlad</author>
-    <guid>https://naavlad.ru/issues/git-submodule-already-exists-in-index.en/</guid>
+    <guid>https://naavlad.ru/gists/git-submodule-already-exists-in-index.en/</guid>
     <description><![CDATA[That error means that projectfolder is already staged (&ldquo;already exists in the index&rdquo;). To find out what&rsquo;s going on here, try to list everything in the index under that folder with:
 1  git ls-files --stage projectfolder   The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
 I suspect that you will see something like:]]></description>
 </item>
 <item>
     <title>Git submodule: &#39;already exists in the index&#39;</title>
-    <link>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</link>
+    <link>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</link>
     <pubDate>Wed, 07 Dec 2022 13:37:44 &#43;0300</pubDate>
     <author>naavlad</author>
-    <guid>https://naavlad.ru/issues/git-submodule-already-exists-in-index/</guid>
+    <guid>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</guid>
     <description><![CDATA[Эта ошибка означает, что папка проекта уже существует в индексе. Смотрим, что есть в индексе:
 1  git ls-files --stage projectfolder   Первый столбец - тип объекта в индексе в projectfolder.
 Я подозреваю, что вы увидите что-то вроде:

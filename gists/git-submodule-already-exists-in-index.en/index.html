@@ -6,7 +6,7 @@
       <meta name="robots" content="noodp">
 
       
-      <title>taxonomies - Тэг - naavlad.ru</title>
+      <title>Git submodule: &#39;already exists in the index&#39; - naavlad.ru</title>
       
       <style>
         .page {
@@ -83,30 +83,64 @@ href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.
       </div>
     </div>
   </header>
-  
-<div class="container mt-3 mb-5">
-
-  
-  <div class="mb-5">
-    <h2 class="single-title animate__animated animate__pulse animate__faster"><i class="fas fa-tag fa-fw" aria-hidden="true"></i>&nbsp;taxonomies</h2>
-  </div>
-  
-    <ul class="step">
-
-        <li class="step-item">
-          <div class="step-content-wrapper">
-            <span class="step-icon step-icon-soft-primary">2022</span>
-            
-            <ul><li class="step-content">
-                <a href="/posts/hugo/contents/taxonomies/" class="step-text text-dark">Таксоно́мия в Hugo(Taxonomies).</a>
-                <span class="step-text">12-13</span>
-              </li></ul>
-            
-          </div>
-        </li>
-
-    </ul>
-    </div>
+  <div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Git submodule: &#39;already exists in the index&#39;</h1><div class="content" id="content"><p>That error means that <code>projectfolder</code> is already staged (&ldquo;already exists in the index&rdquo;).
+To find out what&rsquo;s going on here, try to list everything in the index under that folder with:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git ls-files --stage projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>The first column of that output will tell you what type of object is in the index at <code>projectfolder</code>. (These look like Unix filemodes, but have special meanings in git.)</p>
+<p>I suspect that you will see something like:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>(i.e. a line beginning with <code>160000</code>), in which case the repository in <code>projectfolder</code> has already been added as a &ldquo;gitlink&rdquo;. If it doesn&rsquo;t appear in the output of git submodule, and you want to re-add it as a submodule, you can do:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git rm --cached projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>&hellip; to unstage it, and then:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add url_to_repo projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>&hellip; to add the repository as a submodule.</p>
+<p>However, it&rsquo;s also possible that you will see many blobs listed (with file modes <code>100644</code> and <code>100755</code>), which would suggest to me that you didn&rsquo;t properly unstage the files in <code>projectfolder</code> before copying the new repository into place. If that&rsquo;s the case, you can do the following to unstage all of those files:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git rm -r --cached projectfolder
+</code></pre></td></tr></table>
+</div>
+</div><p>&hellip; and then add the submodule with:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add url_to_repo projectfolder
+</code></pre></td></tr></table>
+</div>
+</div></div></div>
 
 <footer class="container content-space-1 border-top">
   <div class="row align-items-md-center text-center text-sm-start">

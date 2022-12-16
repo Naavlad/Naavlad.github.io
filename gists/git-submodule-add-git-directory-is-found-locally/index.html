@@ -6,7 +6,7 @@
       <meta name="robots" content="noodp">
 
       
-      <title>taxonomies - Тэг - naavlad.ru</title>
+      <title>Git Submodule: &#39;add git directory is found locally&#39; - naavlad.ru</title>
       
       <style>
         .page {
@@ -83,30 +83,58 @@ href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.
       </div>
     </div>
   </header>
-  
-<div class="container mt-3 mb-5">
-
-  
-  <div class="mb-5">
-    <h2 class="single-title animate__animated animate__pulse animate__faster"><i class="fas fa-tag fa-fw" aria-hidden="true"></i>&nbsp;taxonomies</h2>
-  </div>
-  
-    <ul class="step">
-
-        <li class="step-item">
-          <div class="step-content-wrapper">
-            <span class="step-icon step-icon-soft-primary">2022</span>
-            
-            <ul><li class="step-content">
-                <a href="/posts/hugo/contents/taxonomies/" class="step-text text-dark">Таксоно́мия в Hugo(Taxonomies).</a>
-                <span class="step-text">12-13</span>
-              </li></ul>
-            
-          </div>
-        </li>
-
-    </ul>
-    </div>
+  <div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Git Submodule: &#39;add git directory is found locally&#39;</h1><div class="content" id="content"><p>Если вы еще не запустили</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git rm --cached path_to_submodule
+rm -rf path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div><p>Из <code>.gitmodules file.</code> удалить:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>submodule <span class="s2">&#34;path_to_submodule&#34;</span><span class="o">]</span>
+        <span class="nv">path</span> <span class="o">=</span> path_to_submodule
+        <span class="nv">url</span> <span class="o">=</span> https://github.com/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div><p>Из <code>.git/config.</code> удалить:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>submodule <span class="s2">&#34;path_to_submodule&#34;</span><span class="o">]</span>
+        <span class="nv">url</span> <span class="o">=</span> https://github.com/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">rm -rf .git/modules/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git submodule add https://github.com/path_to_submodule
+</code></pre></td></tr></table>
+</div>
+</div></div></div>
 
 <footer class="container content-space-1 border-top">
   <div class="row align-items-md-center text-center text-sm-start">
