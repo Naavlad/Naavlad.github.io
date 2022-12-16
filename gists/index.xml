@@ -1,8 +1,61 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Gists - gist - naavlad.ru</title>
-        <link>https://naavlad.ru/gists/</link>
-        <description>Gists - gist - naavlad.ru</description>
-        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><atom:link href="https://naavlad.ru/gists/" rel="self" type="application/rss+xml" /></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gists on naavlad.ru</title>
+    <link>https://naavlad.ru/gists/</link>
+    <description>Recent content in Gists on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>info@naavlad.ru (naavlad)</managingEditor>
+    <webMaster>info@naavlad.ru (naavlad)</webMaster>
+    <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/gists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
+      <link>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally.en/</link>
+      <pubDate>Wed, 07 Dec 2022 14:16:20 +0300</pubDate>
+      <author>info@naavlad.ru (naavlad)</author>
+      <guid>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally.en/</guid>
+      <description>If you haven&amp;rsquo;t already run
+1 2  git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule   Then:
+Delete the relevant lines from the .gitmodules file. e.g. delete these:
+1 2 3  [submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule   Delete the relevant section from .git/config. e.g. delete these:
+1 2  [submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule   1  rm -rf .</description>
+    </item>
+    
+    <item>
+      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
+      <link>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</link>
+      <pubDate>Wed, 07 Dec 2022 14:16:12 +0300</pubDate>
+      <author>info@naavlad.ru (naavlad)</author>
+      <guid>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</guid>
+      <description>Если вы еще не запустили
+1 2  git rm --cached path_to_submodule rm -rf path_to_submodule   Из .gitmodules file. удалить:
+1 2 3  [submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule   Из .git/config. удалить:
+1 2  [submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule   1  rm -rf .git/modules/path_to_submodule   1  git submodule add https://github.com/path_to_submodule   </description>
+    </item>
+    
+    <item>
+      <title>Git submodule: &#39;already exists in the index&#39;</title>
+      <link>https://naavlad.ru/gists/git-submodule-already-exists-in-index.en/</link>
+      <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
+      <author>info@naavlad.ru (naavlad)</author>
+      <guid>https://naavlad.ru/gists/git-submodule-already-exists-in-index.en/</guid>
+      <description>That error means that projectfolder is already staged (&amp;ldquo;already exists in the index&amp;rdquo;). To find out what&amp;rsquo;s going on here, try to list everything in the index under that folder with:
+1  git ls-files --stage projectfolder   The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
+I suspect that you will see something like:</description>
+    </item>
+    
+    <item>
+      <title>Git submodule: &#39;already exists in the index&#39;</title>
+      <link>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</link>
+      <pubDate>Wed, 07 Dec 2022 13:37:44 +0300</pubDate>
+      <author>info@naavlad.ru (naavlad)</author>
+      <guid>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</guid>
+      <description>Эта ошибка означает, что папка проекта уже существует в индексе. Смотрим, что есть в индексе:
+1  git ls-files --stage projectfolder   Первый столбец - тип объекта в индексе в projectfolder.
+Я подозреваю, что вы увидите что-то вроде:
+1  160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0 projectfolder   (т.е. строка, начинающаяся с 160000), и в этом случае репозиторий в projectfolder уже добавлен как &amp;ldquo;gitlink&amp;rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</description>
+    </item>
+    
+  </channel>
 </rss>
