@@ -4,6 +4,8 @@
   <url>
     <loc>https://naavlad.ru/en/gists/</loc>
     <lastmod>2022-12-07T14:16:20+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -17,6 +19,8 @@
   </url><url>
     <loc>https://naavlad.ru/en/tags/git/</loc>
     <lastmod>2022-12-07T14:16:20+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -30,6 +34,8 @@
   </url><url>
     <loc>https://naavlad.ru/en/gists/git-submodule-add-git-directory-is-found-locally/</loc>
     <lastmod>2022-12-07T14:16:20+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -43,6 +49,8 @@
   </url><url>
     <loc>https://naavlad.ru/en/</loc>
     <lastmod>2022-12-07T14:16:20+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -56,6 +64,8 @@
   </url><url>
     <loc>https://naavlad.ru/en/tags/</loc>
     <lastmod>2022-12-07T14:16:20+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -69,6 +79,8 @@
   </url><url>
     <loc>https://naavlad.ru/en/gists/git-submodule-already-exists-in-index/</loc>
     <lastmod>2022-12-07T13:47:56+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -81,6 +93,8 @@
                 />
   </url><url>
     <loc>https://naavlad.ru/en/authors/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -93,6 +107,8 @@
                 />
   </url><url>
     <loc>https://naavlad.ru/en/categories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -105,6 +121,8 @@
                 />
   </url><url>
     <loc>https://naavlad.ru/en/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"

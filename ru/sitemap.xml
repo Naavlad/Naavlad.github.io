@@ -4,6 +4,8 @@
   <url>
     <loc>https://naavlad.ru/categories/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -17,12 +19,18 @@
   </url><url>
     <loc>https://naavlad.ru/categories/linux/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/linux/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -36,12 +44,18 @@
   </url><url>
     <loc>https://naavlad.ru/posts/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/shell/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,39 +69,63 @@
   </url><url>
     <loc>https://naavlad.ru/posts/linux/change-shell/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/hugo/</loc>
     <lastmod>2022-12-13T17:52:47+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/categories/hugo-websites/</loc>
     <lastmod>2022-12-13T17:52:47+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/taxonomies/</loc>
     <lastmod>2022-12-13T17:52:47+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/posts/hugo/contents/taxonomies/</loc>
     <lastmod>2022-12-13T17:52:47+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/blog/</loc>
     <lastmod>2022-12-13T09:17:26+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/theme/</loc>
     <lastmod>2022-12-13T09:17:26+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/posts/hugo/templates/homepage/</loc>
     <lastmod>2022-12-13T09:17:26+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/posts/hugo/theme-rebuilding/</loc>
     <lastmod>2022-12-09T11:14:51+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/abouts/</loc>
     <lastmod>2022-12-08T16:27:36+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/abouts/about-me/</loc>
     <lastmod>2022-12-08T16:27:36+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/gists/</loc>
     <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -101,6 +139,8 @@
   </url><url>
     <loc>https://naavlad.ru/tags/git/</loc>
     <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -114,6 +154,8 @@
   </url><url>
     <loc>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</loc>
     <lastmod>2022-12-07T14:16:12+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -127,6 +169,8 @@
   </url><url>
     <loc>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</loc>
     <lastmod>2022-12-07T13:37:44+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -140,32 +184,52 @@
   </url><url>
     <loc>https://naavlad.ru/tags/media/</loc>
     <lastmod>2022-12-06T16:05:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/projects/</loc>
     <lastmod>2022-12-06T16:05:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/categories/weekly-projects/</loc>
     <lastmod>2022-12-06T16:05:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/projects/personal-blog/</loc>
     <lastmod>2022-12-06T16:05:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/posts/hugo/moving-blog/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</loc>
     <lastmod>2022-12-02T15:32:45+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/tags/projects/</loc>
     <lastmod>2022-06-21T19:00:59+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/categories/work-projects/</loc>
     <lastmod>2022-06-21T19:00:59+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/projects/recommender-system/</loc>
     <lastmod>2022-06-21T19:00:59+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://naavlad.ru/authors/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -178,6 +242,8 @@
                 />
   </url><url>
     <loc>https://naavlad.ru/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
