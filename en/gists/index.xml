@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>naavlad.ru</title>
-    <link>https://naavlad.ru/en/</link>
-    <description>Recent content on naavlad.ru</description>
+    <title>Gists on naavlad.ru</title>
+    <link>https://naavlad.ru/en/gists/</link>
+    <description>Recent content in Gists on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/en/gists/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
       <link>https://naavlad.ru/en/gists/git-submodule-add-git-directory-is-found-locally/</link>

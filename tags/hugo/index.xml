@@ -1,52 +1,58 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>hugo - Тэг - naavlad.ru</title>
-        <link>https://naavlad.ru/tags/hugo/</link>
-        <description>hugo - Тэг - naavlad.ru</description>
-        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/hugo/" rel="self" type="application/rss+xml" /><item>
-    <title>Таксоно́мия в Hugo(Taxonomies).</title>
-    <link>https://naavlad.ru/posts/hugo/contents/taxonomies/</link>
-    <pubDate>Tue, 13 Dec 2022 17:52:47 &#43;0300</pubDate>
-    <author>naavlad</author>
-    <guid>https://naavlad.ru/posts/hugo/contents/taxonomies/</guid>
-    <description><![CDATA[Что такое таксономия? Таксоно́мия - Математически таксономией является древообразная структура классификаций определённого набора объектов.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on naavlad.ru</title>
+    <link>https://naavlad.ru/tags/hugo/</link>
+    <description>Recent content in hugo on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Tue, 13 Dec 2022 17:52:47 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Таксоно́мия в Hugo(Taxonomies).</title>
+      <link>https://naavlad.ru/posts/hugo/contents/taxonomies/</link>
+      <pubDate>Tue, 13 Dec 2022 17:52:47 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/hugo/contents/taxonomies/</guid>
+      <description>Что такое таксономия?  Link to heading   Таксоно́мия - Математически таксономией является древообразная структура классификаций определённого набора объектов.
 Hugo включает поддержку определяемых пользователем групп контента, называемых таксономиями. Таксономии — это классификации логических отношений между контентом.
 Taxonomy - категоризация, которую можно использовать для классификации контента.
 Term - ключ таксономии.
 Value - часть контента, по ключу Term
-Пример таксономии: веб-сайт фильма Предположим, вы делаете сайт о фильмах. Вы можете включить следующие таксономии:
- Actors Directors Studios Genre Year Awards  Затем в каждом из фильмов вы должны указать термины для каждой из этих таксономий (т.]]></description>
-</item>
-<item>
-    <title>Домашняя страница(Homepage Template).</title>
-    <link>https://naavlad.ru/posts/hugo/templates/homepage/</link>
-    <pubDate>Tue, 13 Dec 2022 09:17:26 &#43;0300</pubDate>
-    <author>naavlad</author>
-    <guid>https://naavlad.ru/posts/hugo/templates/homepage/</guid>
-    <description><![CDATA[Домашняя страница веб-сайта часто форматируется иначе, чем другие страницы. По этой причине Hugo позволяет легко определить домашнюю страницу сайта как уникальный шаблон.
+Пример таксономии: веб-сайт фильма  Link to heading   Предположим, вы делаете сайт о фильмах.</description>
+    </item>
+    
+    <item>
+      <title>Домашняя страница(Homepage Template).</title>
+      <link>https://naavlad.ru/posts/hugo/templates/homepage/</link>
+      <pubDate>Tue, 13 Dec 2022 09:17:26 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/hugo/templates/homepage/</guid>
+      <description>Домашняя страница веб-сайта часто форматируется иначе, чем другие страницы. По этой причине Hugo позволяет легко определить домашнюю страницу сайта как уникальный шаблон.
  Шаблон домашней страницы — это единственный шаблон, необходимый для создания сайта. Это также единственный необходимый шаблон, если вы разрабатываете одностраничный веб-сайт.
- Домашняя страница, как и другие страницы в Hugo, принимает содержимое и front matter из файла _index.md. Этот файл должен находиться в корне папки с вашим содержимым (например, content/_index.]]></description>
-</item>
-<item>
-    <title>Переработка и изменение темы hugo. Аналитика.</title>
-    <link>https://naavlad.ru/posts/hugo/theme-rebuilding/</link>
-    <pubDate>Fri, 09 Dec 2022 11:14:51 &#43;0300</pubDate>
-    <author>naavlad</author>
-    <guid>https://naavlad.ru/posts/hugo/theme-rebuilding/</guid>
-    <description><![CDATA[Ведение После переезда блога, я решил поменять тему, когда еще представится такая возможность без поиска всяких поводов. Хотелось найти максимально простую, но достаточно интересную по оформлению. Перепробовал неслоколько тем, очень достойно сделаных, и решил сделать свою, благо давно уже у меня лежит купленный на бустрапе фронт.
-Об аналитике Но начать я хочу, как не странно, с SEO, c аналитики гугла и яндекса, даже для небольшого блога, я считаю ее необходимо настраивать, просто для себя.]]></description>
-</item>
-<item>
-    <title>Переезд блога, возможно окончательный.</title>
-    <link>https://naavlad.ru/posts/hugo/moving-blog/</link>
-    <pubDate>Fri, 02 Dec 2022 15:32:45 &#43;0300</pubDate>
-    <author>naavlad</author>
-    <guid>https://naavlad.ru/posts/hugo/moving-blog/</guid>
-    <description><![CDATA[С момента последнего переезда этого блога прошло два года.
+ Домашняя страница, как и другие страницы в Hugo, принимает содержимое и front matter из файла _index.md. Этот файл должен находиться в корне папки с вашим содержимым (например, content/_index.</description>
+    </item>
+    
+    <item>
+      <title>Переработка и изменение темы hugo. Аналитика.</title>
+      <link>https://naavlad.ru/posts/hugo/theme-rebuilding/</link>
+      <pubDate>Fri, 09 Dec 2022 11:14:51 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/hugo/theme-rebuilding/</guid>
+      <description>Ведение  Link to heading   После переезда блога, я решил поменять тему, когда еще представится такая возможность без поиска всяких поводов. Хотелось найти максимально простую, но достаточно интересную по оформлению. Перепробовал неслоколько тем, очень достойно сделаных, и решил сделать свою, благо давно уже у меня лежит купленный на бустрапе фронт.
+Об аналитике  Link to heading   Но начать я хочу, как не странно, с SEO, c аналитики гугла и яндекса, даже для небольшого блога, я считаю ее необходимо настраивать, просто для себя.</description>
+    </item>
+    
+    <item>
+      <title>Переезд блога, возможно окончательный.</title>
+      <link>https://naavlad.ru/posts/hugo/moving-blog/</link>
+      <pubDate>Fri, 02 Dec 2022 15:32:45 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/hugo/moving-blog/</guid>
+      <description>С момента последнего переезда этого блога прошло два года.
 За это время перепробовал несколько основных CMS, потом я написал свой блог на Django с Vue.js и смог убедится, что переход на свою конфигурацию никак не помог ведению блога и написанию постов, но даже имел противоположный эффект.
 Странно, что такая технология прошла мимо моего внимания, точнее, в какой то момент, была отвергнута в пользу других вариантов.
-Весь блог теперь живет на github.]]></description>
-</item>
-</channel>
+Весь блог теперь живет на github.</description>
+    </item>
+    
+  </channel>
 </rss>

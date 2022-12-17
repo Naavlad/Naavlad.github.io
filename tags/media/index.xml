@@ -1,16 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>media - Тэг - naavlad.ru</title>
-        <link>https://naavlad.ru/tags/media/</link>
-        <description>media - Тэг - naavlad.ru</description>
-        <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>info@naavlad.ru (naavlad)</managingEditor>
-            <webMaster>info@naavlad.ru (naavlad)</webMaster><lastBuildDate>Tue, 06 Dec 2022 16:05:17 &#43;0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/media/" rel="self" type="application/rss+xml" /><item>
-    <title>Личный блог</title>
-    <link>https://naavlad.ru/projects/personal-blog/</link>
-    <pubDate>Tue, 06 Dec 2022 16:05:17 &#43;0300</pubDate>
-    <author>naavlad</author>
-    <guid>https://naavlad.ru/projects/personal-blog/</guid>
-    <description><![CDATA[Переезд на Hugo ]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>media on naavlad.ru</title>
+    <link>https://naavlad.ru/tags/media/</link>
+    <description>Recent content in media on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Tue, 06 Dec 2022 16:05:17 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Личный блог</title>
+      <link>https://naavlad.ru/projects/personal-blog/</link>
+      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/projects/personal-blog/</guid>
+      <description>Переезд на Hugo  Link to heading   </description>
+    </item>
+    
+  </channel>
 </rss>
