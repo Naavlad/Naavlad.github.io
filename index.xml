@@ -5,9 +5,7 @@
     <link>https://naavlad.ru/</link>
     <description>Recent content on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Fri, 16 Dec 2022 09:27:03 +0300</lastBuildDate><atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" />
-    <item>
+    <lastBuildDate>Fri, 16 Dec 2022 09:27:03 +0300</lastBuildDate><atom:link href="https://naavlad.ru/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Как изменить shell в Linux</title>
       <link>https://naavlad.ru/posts/linux/change-shell/</link>
       <pubDate>Fri, 16 Dec 2022 09:27:03 +0300</pubDate>
@@ -16,22 +14,23 @@
       <description>Одна из самых популярных командных оболочек — это оболочка Bash (Bourne Again Shell).
 Она используется по умолчанию в большинстве дистрибутивов Linux.
 Посмотреть командную оболочку у пользователя(у разных пользователей могут использоваться разные командные оболочки) можно разными способами.
-В переменной окружения.  Link to heading   Переменная окружения SHELL хранит путь до исполняемого файла оболочки.
-echo $SHELL /usr/bin/zsh # для zsh /usr/bin/bash # для bash Через имя текущего работающего процесса  Link to heading   Командой echo $0 входит в POSIX standards compliant shells .</description>
+В переменной окружения. Переменная окружения SHELL хранит путь до исполняемого файла оболочки.
+echo $SHELL /usr/bin/zsh # для zsh /usr/bin/bash # для bash Через имя текущего работающего процесса Командой echo $0 входит в POSIX standards compliant shells .</description>
     </item>
     
     <item>
       <title>Таксоно́мия в Hugo(Taxonomies).</title>
-      <link>https://naavlad.ru/posts/hugo/contents/taxonomies/</link>
+      <link>https://naavlad.ru/posts/hugo/templates/taxonomies/</link>
       <pubDate>Tue, 13 Dec 2022 17:52:47 +0300</pubDate>
       
-      <guid>https://naavlad.ru/posts/hugo/contents/taxonomies/</guid>
-      <description>Что такое таксономия?  Link to heading   Таксоно́мия - Математически таксономией является древообразная структура классификаций определённого набора объектов.
+      <guid>https://naavlad.ru/posts/hugo/templates/taxonomies/</guid>
+      <description>Что такое таксономия? Таксоно́мия - Математически таксономией является древообразная структура классификаций определённого набора объектов.
 Hugo включает поддержку определяемых пользователем групп контента, называемых таксономиями. Таксономии — это классификации логических отношений между контентом.
 Taxonomy - категоризация, которую можно использовать для классификации контента.
 Term - ключ таксономии.
 Value - часть контента, по ключу Term
-Пример таксономии: веб-сайт фильма  Link to heading   Предположим, вы делаете сайт о фильмах.</description>
+Пример таксономии: веб-сайт фильма Предположим, вы делаете сайт о фильмах. Вы можете включить следующие таксономии:
+ Actors Directors Studios Genre Year Awards  Затем в каждом из фильмов вы должны указать термины для каждой из этих таксономий (т.</description>
     </item>
     
     <item>
@@ -51,8 +50,8 @@ Value - часть контента, по ключу Term
       <pubDate>Fri, 09 Dec 2022 11:14:51 +0300</pubDate>
       
       <guid>https://naavlad.ru/posts/hugo/theme-rebuilding/</guid>
-      <description>Ведение  Link to heading   После переезда блога, я решил поменять тему, когда еще представится такая возможность без поиска всяких поводов. Хотелось найти максимально простую, но достаточно интересную по оформлению. Перепробовал неслоколько тем, очень достойно сделаных, и решил сделать свою, благо давно уже у меня лежит купленный на бустрапе фронт.
-Об аналитике  Link to heading   Но начать я хочу, как не странно, с SEO, c аналитики гугла и яндекса, даже для небольшого блога, я считаю ее необходимо настраивать, просто для себя.</description>
+      <description>Ведение После переезда блога, я решил поменять тему, когда еще представится такая возможность без поиска всяких поводов. Хотелось найти максимально простую, но достаточно интересную по оформлению. Перепробовал неслоколько тем, очень достойно сделаных, и решил сделать свою, благо давно уже у меня лежит купленный на бустрапе фронт.
+Об аналитике Но начать я хочу, как не странно, с SEO, c аналитики гугла и яндекса, даже для небольшого блога, я считаю ее необходимо настраивать, просто для себя.</description>
     </item>
     
     <item>
@@ -70,35 +69,26 @@ Value - часть контента, по ключу Term
     
     <item>
       <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
-      <link>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</link>
-      <pubDate>Wed, 07 Dec 2022 14:16:12 +0300</pubDate>
+      <link>https://naavlad.ru/notes/git-submodule-add-git-directory-is-found-locally/</link>
+      <pubDate>Wed, 07 Dec 2022 14:16:20 +0300</pubDate>
       
-      <guid>https://naavlad.ru/gists/git-submodule-add-git-directory-is-found-locally/</guid>
-      <description>Если вы еще не запустили
-git rm --cached path_to_submodule rm -rf path_to_submodule Из .gitmodules file. удалить:
-[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Из .git/config. удалить:
+      <guid>https://naavlad.ru/notes/git-submodule-add-git-directory-is-found-locally/</guid>
+      <description>If you haven&amp;rsquo;t already run
+git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule Then:
+Delete the relevant lines from the .gitmodules file. e.g. delete these:
+[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Delete the relevant section from .git/config. e.g. delete these:
 [submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
     </item>
     
     <item>
       <title>Git submodule: &#39;already exists in the index&#39;</title>
-      <link>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</link>
-      <pubDate>Wed, 07 Dec 2022 13:37:44 +0300</pubDate>
+      <link>https://naavlad.ru/notes/git-submodule-already-exists-in-index/</link>
+      <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
       
-      <guid>https://naavlad.ru/gists/git-submodule-already-exists-in-index/</guid>
-      <description>Эта ошибка означает, что папка проекта уже существует в индексе. Смотрим, что есть в индексе:
-git ls-files --stage projectfolder Первый столбец - тип объекта в индексе в projectfolder.
-Я подозреваю, что вы увидите что-то вроде:
-160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0 projectfolder (т.е. строка, начинающаяся с 160000), и в этом случае репозиторий в projectfolder уже добавлен как &amp;ldquo;gitlink&amp;rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</description>
-    </item>
-    
-    <item>
-      <title>Личный блог</title>
-      <link>https://naavlad.ru/projects/personal-blog/</link>
-      <pubDate>Tue, 06 Dec 2022 16:05:17 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/projects/personal-blog/</guid>
-      <description>Переезд на Hugo  Link to heading   </description>
+      <guid>https://naavlad.ru/notes/git-submodule-already-exists-in-index/</guid>
+      <description>That error means that projectfolder is already staged (&amp;ldquo;already exists in the index&amp;rdquo;). To find out what&amp;rsquo;s going on here, try to list everything in the index under that folder with:
+git ls-files --stage projectfolder The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
+I suspect that you will see something like:</description>
     </item>
     
     <item>
@@ -113,14 +103,32 @@ git ls-files --stage projectfolder Первый столбец - тип объе
 Весь блог теперь живет на github.</description>
     </item>
     
-    <item>
-      <title>Рекомендательная система для игрового магазина.</title>
-      <link>https://naavlad.ru/projects/recommender-system/</link>
-      <pubDate>Tue, 21 Jun 2022 19:00:59 +0300</pubDate>
-      
-      <guid>https://naavlad.ru/projects/recommender-system/</guid>
-      <description>&amp;ldquo;Рекомендательная система для игрового магазина.&amp;rdquo;</description>
-    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
   </channel>
 </rss>

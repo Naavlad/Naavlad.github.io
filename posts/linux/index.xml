@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on naavlad.ru</title>
+    <link>https://naavlad.ru/posts/linux/</link>
+    <description>Recent content in Linux on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 16 Dec 2022 09:27:03 +0300</lastBuildDate><atom:link href="https://naavlad.ru/posts/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Как изменить shell в Linux</title>
+      <link>https://naavlad.ru/posts/linux/change-shell/</link>
+      <pubDate>Fri, 16 Dec 2022 09:27:03 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/linux/change-shell/</guid>
+      <description>Одна из самых популярных командных оболочек — это оболочка Bash (Bourne Again Shell).
+Она используется по умолчанию в большинстве дистрибутивов Linux.
+Посмотреть командную оболочку у пользователя(у разных пользователей могут использоваться разные командные оболочки) можно разными способами.
+В переменной окружения. Переменная окружения SHELL хранит путь до исполняемого файла оболочки.
+echo $SHELL /usr/bin/zsh # для zsh /usr/bin/bash # для bash Через имя текущего работающего процесса Командой echo $0 входит в POSIX standards compliant shells .</description>
+    </item>
+    
+    
+  </channel>
+</rss>

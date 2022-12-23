@@ -5,9 +5,7 @@
     <link>https://naavlad.ru/tags/shell/</link>
     <description>Recent content in shell on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Fri, 16 Dec 2022 09:27:03 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/shell/index.xml" rel="self" type="application/rss+xml" />
-    <item>
+    <lastBuildDate>Fri, 16 Dec 2022 09:27:03 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/shell/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Как изменить shell в Linux</title>
       <link>https://naavlad.ru/posts/linux/change-shell/</link>
       <pubDate>Fri, 16 Dec 2022 09:27:03 +0300</pubDate>
@@ -16,9 +14,10 @@
       <description>Одна из самых популярных командных оболочек — это оболочка Bash (Bourne Again Shell).
 Она используется по умолчанию в большинстве дистрибутивов Linux.
 Посмотреть командную оболочку у пользователя(у разных пользователей могут использоваться разные командные оболочки) можно разными способами.
-В переменной окружения.  Link to heading   Переменная окружения SHELL хранит путь до исполняемого файла оболочки.
-echo $SHELL /usr/bin/zsh # для zsh /usr/bin/bash # для bash Через имя текущего работающего процесса  Link to heading   Командой echo $0 входит в POSIX standards compliant shells .</description>
+В переменной окружения. Переменная окружения SHELL хранит путь до исполняемого файла оболочки.
+echo $SHELL /usr/bin/zsh # для zsh /usr/bin/bash # для bash Через имя текущего работающего процесса Командой echo $0 входит в POSIX standards compliant shells .</description>
     </item>
+    
     
   </channel>
 </rss>

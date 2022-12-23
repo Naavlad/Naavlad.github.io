@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Таксоно́мия в Hugo(Taxonomies).</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="/google-fonts/Mulish/mulish.css"/>
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+<meta property="og:title" content="Таксоно́мия в Hugo(Taxonomies)." />
+<meta property="og:description" content="Hugo включает поддержку определяемых пользователем таксономий(тaxonomies)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naavlad.ru/posts/hugo/templates/taxonomies/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-13T17:52:47+03:00" />
+<meta property="article:modified_time" content="2022-12-13T17:52:47+03:00" />
+
+
+
+    
+    
+<meta name="description" content="Hugo включает поддержку определяемых пользователем таксономий(тaxonomies)." />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+    
+
+      
+      
+      <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91605314, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+      </script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/91605314" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      
+      
+
+      
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0FF9ZLYH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-KC0FF9ZLYH');
+        </script>
+      
+      
+
+    
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      naavlad.ru</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/hugo/moving-blog/" title="Переезд блога">Переезд блога</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/hugo/">Hugo</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/hugo/theme-rebuilding/" title="Изменение темы hugo">Изменение темы hugo</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/hugo/templates/">Templates</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/hugo/templates/homepage/" title="Домашняя страница(Homepage Template)">Домашняя страница(Homepage Template)</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/hugo/templates/taxonomies/" title="Таксоно́мия в Hugo(Taxonomies)">Таксоно́мия в Hugo(Taxonomies)</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/linux/">Linux</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/linux/change-shell/" title="Как изменить shell в Linux">Как изменить shell в Linux</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/hugo/templates/taxonomies/hero.png);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/avatars/avatar.svg' alt="Author Image">
+          <h5 class="author-name"></h5>
+          <p>Tuesday, December 13, 2022</p>
+        </div>
+
+        <div class="title">
+          <h1>Таксоно́мия в Hugo(Taxonomies).</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <h3 id="что-такое-таксономия">Что такое таксономия?</h3>
+<p><em><strong>Таксоно́мия</strong> - Математически таксономией является древообразная структура классификаций определённого набора объектов.</em></p>
+<p>Hugo включает поддержку определяемых пользователем групп контента, называемых таксономиями. Таксономии — это классификации логических отношений между контентом.</p>
+<p><code>Taxonomy</code> - категоризация, которую можно использовать для классификации контента.<br>
+<code>Term</code> - ключ таксономии.<br>
+<code>Value</code>  - часть контента, по ключу <code>Term</code></p>
+<h3 id="пример-таксономии-веб-сайт-фильма">Пример таксономии: веб-сайт фильма</h3>
+<p>Предположим, вы делаете сайт о фильмах. Вы можете включить следующие таксономии:</p>
+<ul>
+<li>Actors</li>
+<li>Directors</li>
+<li>Studios</li>
+<li>Genre</li>
+<li>Year</li>
+<li>Awards</li>
+</ul>
+<p>Затем в каждом из фильмов вы должны указать термины для каждой из этих таксономий (т. е. во определении каждого из ваших файлов контента фильма). На основе этих условий Hugo автоматически создаст страницы для каждого актера, режиссера, студии, жанра, года и награды, на каждой из которых перечислялись все фильмы, соответствующие этому конкретному актеру, режиссеру, студии, жанру, году и награде.</p>
+<!-- raw HTML omitted -->
+<p>С точки зрения контента это выглядело бы иначе, хотя метки остаются прежними:</p>
+<!-- raw HTML omitted -->
+<h3 id="значения-по-умолчанию-hugo-taxonomy-defaults">Значения по умолчанию (Hugo Taxonomy Defaults).</h3>
+<p>Hugo natively поддерживает таксономии.<br>
+Не добавляя ни одной строки в файл конфигурации вашего сайта, Hugo автоматически создаст таксономию для тегов и категорий. Это будет то же самое, что и ручная настройка таксономий, как показано ниже:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>taxonomies<span style="color:#f92672">]</span>
+  category <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;categories&#39;</span>
+  tag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tags&#39;</span>
+</code></pre></div><p>Если вам не нужны таксономии, их можно отключить.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># config</span>
+disableKinds <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;taxonomy&#39;</span>, <span style="color:#e6db74">&#39;term&#39;</span><span style="color:#f92672">]</span>
+</code></pre></div><p><code>home</code> - Домашняя страница - <code>(/index.html)</code><br>
+<code>page</code> -  - Текущая страница - <code>my-post page (/posts/my-post/index.html)</code><br>
+<code>section</code> -  - Страница раздела - <code>posts section (/posts/index.html)</code><br>
+<code>taxonomy</code> -  - Страница для таксономии - <code>tags taxonomy (/tags/index.html)</code><br>
+<code>term</code> -  - Страница по ключу - <code>term awesome in tags taxonomy (/tags/awesome/index.html)</code></p>
+<h3 id="расположение-по-умолчанию">Расположение по умолчанию.</h3>
+<p>Hugo автоматически создает как страницу со списком всех терминов таксономии, так и отдельные страницы со списками контента, связанными с каждым термином.<br>
+Например, таксономия категорий, объявленная в вашей конфигурации и используемая во конфигурации вашего контента, создаст следующие страницы:</p>
+<ul>
+<li>Одна страница по адресу <code>example.com/categories/</code>, на которой перечислены все термины в таксономии.</li>
+<li>Отдельные страницы со списком таксономии (например, <code>/categories/development/</code>) для каждого термина, который показывает список всех страниц, помеченных как часть этой таксономии, в конфигурации любого файла.</li>
+</ul>
+<h3 id="конфигурация">Конфигурация.</h3>
+<p>Пользовательские таксономии, отличные от стандартных, должны быть определены в конфигурации вашего сайта.<br>
+Для каждой таксономии необходимо указать метки:</p>
+<ul>
+<li>ключ в единственном числе = &ldquo;значение во множественном числе&rdquo;</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>taxonomies<span style="color:#f92672">]</span>
+  category <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;categories&#39;</span>
+  series <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;series&#39;</span>
+  tag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tags&#39;</span>
+</code></pre></div><h3 id="изменение-дефолтных-значений">Изменение дефолтных значений.</h3>
+<p>Если вы хотите иметь только таксономию тегов по умолчанию и удалить таксономию категорий для своего сайта, вы можете сделать это, изменив значение таксономии в конфигурации вашего сайта.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>taxonomies<span style="color:#f92672">]</span>
+  tag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tags&#39;</span>
+</code></pre></div><h3 id="добавление-контента-таксономии">Добавление контента таксономии.</h3>
+<p>Как только таксономия определена на уровне сайта, ей можно назначить любой фрагмент контента, независимо от типа контента или раздела контента. Присвоение содержания таксономии выполняется в конфигурации. Просто создайте переменную с именем таксономии во множественном числе и назначьте все термины, которые вы хотите применить к экземпляру типа контента.</p>
+<h4 id="example">Example:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">categories <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Development&#39;</span><span style="color:#f92672">]</span>
+project_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://github.com/gohugoio/hugo&#39;</span>
+series <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Go Web Dev&#39;</span><span style="color:#f92672">]</span>
+slug <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hugo&#39;</span>
+tags <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Development&#39;</span>, <span style="color:#e6db74">&#39;Go&#39;</span>, <span style="color:#e6db74">&#39;fast&#39;</span>, <span style="color:#e6db74">&#39;Blogging&#39;</span><span style="color:#f92672">]</span>
+title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hugo: A fast and flexible static site generator&#39;</span>
+</code></pre></div><h3 id="добавить-пользовательские-метаданные">Добавить пользовательские метаданные.</h3>
+<p>Если вам нужно добавить пользовательские метаданные к вашим терминам таксономии, вам нужно будет создать страницу для этого термина в /content/<!-- raw HTML omitted -->/<!-- raw HTML omitted -->/_index.md и добавить свои метаданные во вступительную часть. Продолжая наш пример «Актеры», допустим, вы хотите добавить ссылку на страницу Википедии для каждого актера. Ваши страницы условий будут выглядеть примерно так:</p>
+<p><code>/content/actors/bruce-willis/_index.md</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
+title: <span style="color:#e6db74">&#34;Bruce Willis&#34;</span>
+wikipedia: <span style="color:#e6db74">&#34;https://en.wikipedia.org/wiki/Bruce_Willis&#34;</span>
+---
+</code></pre></div><p>Оригинал страницы <a href="https://gohugo.io/content-management/taxonomies/#example-front-matter-with-taxonomies">Taxonomies</a>.</p>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/main/content/posts/hugo/templates/taxonomies/index.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/hugo/templates/homepage/" title="Домашняя страница(Homepage Template)." class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Домашняя страница(Homepage Template).</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/linux/change-shell/" title="Как изменить shell в Linux" class="btn btn-outline-info">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Как изменить shell в Linux</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#что-такое-таксономия">Что такое таксономия?</a></li>
+        <li><a href="#пример-таксономии-веб-сайт-фильма">Пример таксономии: веб-сайт фильма</a></li>
+        <li><a href="#значения-по-умолчанию-hugo-taxonomy-defaults">Значения по умолчанию (Hugo Taxonomy Defaults).</a></li>
+        <li><a href="#расположение-по-умолчанию">Расположение по умолчанию.</a></li>
+        <li><a href="#конфигурация">Конфигурация.</a></li>
+        <li><a href="#изменение-дефолтных-значений">Изменение дефолтных значений.</a></li>
+        <li><a href="#добавление-контента-таксономии">Добавление контента таксономии.</a>
+          <ul>
+            <li><a href="#example">Example:</a></li>
+          </ul>
+        </li>
+        <li><a href="#добавить-пользовательские-метаданные">Добавить пользовательские метаданные.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+        </div>
+        
+
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+
+              
+                <li><a href=mailto:info@naavlad.ru target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@naavlad.ru</span>
+                </a></li>  
+              
+
+            
+
+              
+                <li><a href=https://github.com/Naavlad target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>github</span>
+                </a></li>
+              
+
+            
+
+              
+                <li><a href=https://don.blognot.co/web/@npl240 target="_blank" rel="noopener">
+                  <span><i class="fab fa-mastodon"></i></span> <span>mastodon</span>
+                </a></li>
+              
+
+            
+
+              
+                <li><a href=https://t.me/naavlad target="_blank" rel="noopener">
+                  <span><i class="fab fa-telegram"></i></span> <span>telegram</span>
+                </a></li>
+              
+
+            
+          </ul>
+        </div>
+        
+
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://naavlad.ru/index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          
+        </div>
+
+        
+        
+          <div class="col-md-4 text-center">
+            © 2021 - 2022 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+          </div>
+        
+        
+        <div class="col-md-4 text-right">
+          
+        </div>
+      </div>
+    </div>
+    
+
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

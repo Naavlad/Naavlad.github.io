@@ -5,9 +5,7 @@
     <link>https://naavlad.ru/tags/theme/</link>
     <description>Recent content in theme on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Tue, 13 Dec 2022 09:17:26 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/theme/index.xml" rel="self" type="application/rss+xml" />
-    <item>
+    <lastBuildDate>Tue, 13 Dec 2022 09:17:26 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/theme/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Домашняя страница(Homepage Template).</title>
       <link>https://naavlad.ru/posts/hugo/templates/homepage/</link>
       <pubDate>Tue, 13 Dec 2022 09:17:26 +0300</pubDate>
@@ -24,9 +22,10 @@
       <pubDate>Fri, 09 Dec 2022 11:14:51 +0300</pubDate>
       
       <guid>https://naavlad.ru/posts/hugo/theme-rebuilding/</guid>
-      <description>Ведение  Link to heading   После переезда блога, я решил поменять тему, когда еще представится такая возможность без поиска всяких поводов. Хотелось найти максимально простую, но достаточно интересную по оформлению. Перепробовал неслоколько тем, очень достойно сделаных, и решил сделать свою, благо давно уже у меня лежит купленный на бустрапе фронт.
-Об аналитике  Link to heading   Но начать я хочу, как не странно, с SEO, c аналитики гугла и яндекса, даже для небольшого блога, я считаю ее необходимо настраивать, просто для себя.</description>
+      <description>Ведение После переезда блога, я решил поменять тему, когда еще представится такая возможность без поиска всяких поводов. Хотелось найти максимально простую, но достаточно интересную по оформлению. Перепробовал неслоколько тем, очень достойно сделаных, и решил сделать свою, благо давно уже у меня лежит купленный на бустрапе фронт.
+Об аналитике Но начать я хочу, как не странно, с SEO, c аналитики гугла и яндекса, даже для небольшого блога, я считаю ее необходимо настраивать, просто для себя.</description>
     </item>
+    
     
   </channel>
 </rss>
