@@ -103,27 +103,33 @@
     <priority>0.1</priority>
   </url><url>
     <loc>https://naavlad.ru/categories/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/categories/linux/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/posts/linux/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/tags/linux/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/posts/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
-    <loc>https://naavlad.ru/tags/shell/</loc>
-    <lastmod>2022-12-16T09:27:03+03:00</lastmod>
+    <loc>https://naavlad.ru/tags/screen/</loc>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/tags/</loc>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
+  </url><url>
+    <loc>https://naavlad.ru/posts/linux/screen/</loc>
+    <lastmod>2022-12-27T09:27:03+03:00</lastmod>
+  </url><url>
+    <loc>https://naavlad.ru/tags/shell/</loc>
     <lastmod>2022-12-16T09:27:03+03:00</lastmod>
   </url><url>
     <loc>https://naavlad.ru/posts/linux/change-shell/</loc>

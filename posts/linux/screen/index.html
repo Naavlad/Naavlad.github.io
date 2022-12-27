@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Коротко о себе</title>
+    <title>Утилита Screen в Linux</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -26,18 +26,18 @@
 
 
 
-<meta property="og:title" content="Коротко о себе" />
-<meta property="og:description" content="Коротко о себе" />
+<meta property="og:title" content="Утилита Screen в Linux" />
+<meta property="og:description" content="Терминальный мультиплексор Screen в Linux" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://naavlad.ru/abouts/about-me/" /><meta property="article:section" content="abouts" />
-<meta property="article:published_time" content="2022-12-08T16:27:36+03:00" />
-<meta property="article:modified_time" content="2022-12-08T16:27:36+03:00" />
+<meta property="og:url" content="https://naavlad.ru/posts/linux/screen/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-27T09:27:03+03:00" />
+<meta property="article:modified_time" content="2022-12-27T09:27:03+03:00" />
 
 
 
     
     
-<meta name="description" content="Коротко о себе" />
+<meta name="description" content="Терминальный мультиплексор Screen в Linux" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -217,12 +217,15 @@
   
   
   
+    
+    
+  
   
     
     <li>
-      <i class="fas fa-plus-circle"></i><a class="" href="/posts/linux/">Linux</a>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/linux/">Linux</a>
       
-      <ul class="">
+      <ul class="active">
         
   
   
@@ -237,9 +240,12 @@
   
   
   
+    
+    
+  
   
     
-    <li><a class="" href="/posts/linux/screen/" title="Утилита Screen в Linux">Утилита Screen в Linux</a></li>
+    <li><a class="active" href="/posts/linux/screen/" title="Утилита Screen в Linux">Утилита Screen в Linux</a></li>
   
 
 
@@ -262,7 +268,7 @@
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/default-hero.jpg);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/linux/screen/hero.jpg);'>
       </div>
 
       
@@ -270,29 +276,51 @@
         <div class="author-profile ml-auto align-self-lg-center">
           <img class="rounded-circle" src='/images/avatars/avatar.svg' alt="Author Image">
           <h5 class="author-name"></h5>
-          <p>Thursday, December 8, 2022</p>
+          <p>Tuesday, December 27, 2022</p>
         </div>
 
         <div class="title">
-          <h1>Коротко о себе</h1>
+          <h1>Утилита Screen в Linux</h1>
         </div>
         
         <div class="post-content" id="post-content">
-          <p>Разрабатываю Rest API для веб-приложений и сервисов на python.<br>
-Настраиваю инфраструктуру для веб-проектов.<br>
-Помогаю бизнесу развиваться 💰, а пользователям — становиться счастливее 🎁.</p>
-<p>В прошлой жизни руководил направлением FMCG.
-Организовывал Бизнесс-процессы предприятия, постоил с нуля систему KPI, провел сертификацию ISO 9001 и перестроил систему кредитования.</p>
-<p>Начиная с 2008г. стал изучать сложные финансовые инструменты и торговать на площадках NYSE, NASDAQ. Увлечение переросло в нечто большее и продолжилось построением сложных опционных позиций на NYSE, NASDAQ, CME. Потом автоматизация торговых систем FORTS, арбитраж, хеджирование, risk management.
-MOEX был первым шагом, потом перешел на CME, далее на NYSE, NASDAQ.</p>
-<p>Имею большой опыт работы вне IT компаний, понимаю потребности потребителей софта, понимаю разницу в точках зрения со стороны потребителя и разработчика.
-Знаю, понимаю, применяю SMART и KPI.
-Большой опыт переговоров и стрессоустойчивость. Легко нахожу контакт с коллективом.
-Техники Time management Максима Дорофеева – это еще одна моя настольная книга, легко, эффективно и органично.</p>
-<p>Один из последних проектов разрабатывали, используя микросервисную архитектуру, прогнозирование вероятности событий на
-основании ML модели в игровых приложениях.</p>
-<p>Пробую использовать в новых проектах Golang.</p>
-
+          <h2 id="как-пользоваться-утилитой-screen-на-debian-ubunt-и-их-производных">Как пользоваться утилитой Screen на Debian, Ubunt и их производных.</h2>
+<p>Screen - терминальный мультиплексор. Дает возможность внутри действующей сессии открыть много виртуальных терминалов. Процесс, запущенный внутри сессии через screen, будет продолжаться после отключения от сессии.</p>
+<p>На некоторых системах пакет screen может быть уже установлен,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">screen --version
+Screen version 4.09.00 <span style="color:#f92672">(</span>GNU<span style="color:#f92672">)</span> 30-Jan-22
+</code></pre></div><p>а если нет, то устанавливается он самым обычным способом.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install screen
+</code></pre></div><h2 id="запуск">Запуск</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">screen
+</code></pre></div><p><img src="screen-hello.png" alt="Screen"></p>
+<p>Создастся новая сессия программы и появится приветственное сообщение. Для его закрытия нужно нажать <strong>Space</strong> или <strong>Enter</strong>.</p>
+<p>Создать сессию с именем</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">screen -S &lt;имя сессии&gt;
+</code></pre></div><p>Cписок доступных команд:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Ctrl+a и ?
+</code></pre></div><p><img src="screen-com.png" alt="Cписок доступных команд"></p>
+<p>Все управляющие команды начинаются с комбинации клавиш Ctrl + a, затем следует буква или сочетание клавиш.<br>
+<strong>Буквы разных регистров выполняют разные команды.</strong></p>
+<p>Cоздать новое окно <code>Ctrl+a</code> и <code>c</code><br>
+Просмотр списка созданных <code>Ctrl + a</code> и <code>w</code> <br>
+Переключиться на окно с номером 2 <code>Ctrl+a</code> и <code>2</code><br>
+Переименовать текущее окно <code>Ctrl+a</code> и <code>A</code><br>
+Разделить окно по горизонтали <code>Ctrl+a</code> и <code>S</code><br>
+Разделить окно по вертикали <code>Ctrl+a </code> и <code>|</code><br>
+Переключить фокус на следующую область разделенного окна <code>Ctrl+a</code> и <code>tab</code><br>
+Скрыть все окна и оставить только текущее <code>Ctrl+a</code> и <code>Q</code><br>
+Закрыть текущую область <code>Ctrl+a</code> и <code>X</code></p>
+<p>Cкрыть все окна сессии <code>Ctrl + a</code> и <code>\.</code> Подтвердите решение нажатием <code>y</code><br>
+Выйти из screen <code>Ctrl + a</code> и <code>d</code></p>
+<p>Запущеннй процесс не остановится и будет продолжать свое выполнение.
+Если сессия одна, что бы в нее вернуться достаточно</p>
+<pre tabindex="0"><code>screen -r
+</code></pre><p>Чтобы перейти в нужную сессию следует указать параметру <code>-r</code> её id или название.</p>
+<pre tabindex="0"><code>screen -r 34566
+</code></pre><p>Посмотреть список запущенных сессий</p>
+<pre tabindex="0"><code>screen -ls
+</code></pre>
         </div>
 
         
@@ -340,10 +368,20 @@ MOEX был первым шагом, потом перешел на CME, дал�
   
 
   
+    
+    
+  
   
 
 
 <div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/linux/change-shell/" title="Как изменить shell в Linux" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Как изменить shell в Linux</div>
+      </a>
+    </div>
   
   
 </div>
@@ -373,7 +411,12 @@ MOEX был первым шагом, потом перешел на CME, дал�
       <h5 class="text-center pl-3">Table of Contents</h5>
       <hr>
       <div class="toc">
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#как-пользоваться-утилитой-screen-на-debian-ubunt-и-их-производных">Как пользоваться утилитой Screen на Debian, Ubunt и их производных.</a></li>
+    <li><a href="#запуск">Запуск</a></li>
+  </ul>
+</nav>
       </div>
     </div>
     

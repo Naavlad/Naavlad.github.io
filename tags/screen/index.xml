@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>screen on naavlad.ru</title>
+    <link>https://naavlad.ru/tags/screen/</link>
+    <description>Recent content in screen on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Dec 2022 09:27:03 +0300</lastBuildDate><atom:link href="https://naavlad.ru/tags/screen/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Утилита Screen в Linux</title>
+      <link>https://naavlad.ru/posts/linux/screen/</link>
+      <pubDate>Tue, 27 Dec 2022 09:27:03 +0300</pubDate>
+      
+      <guid>https://naavlad.ru/posts/linux/screen/</guid>
+      <description>Как пользоваться утилитой Screen на Debian, Ubunt и их производных. Screen - терминальный мультиплексор. Дает возможность внутри действующей сессии открыть много виртуальных терминалов. Процесс, запущенный внутри сессии через screen, будет продолжаться после отключения от сессии.
+На некоторых системах пакет screen может быть уже установлен,
+screen --version Screen version 4.09.00 (GNU) 30-Jan-22 а если нет, то устанавливается он самым обычным способом.
+sudo apt install screen Запуск screen Создастся новая сессия программы и появится приветственное сообщение.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
