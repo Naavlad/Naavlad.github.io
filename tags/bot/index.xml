@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bot on naavlad.ru</title>
+    <link>https://naavlad.ru/tags/bot/</link>
+    <description>Recent content in bot on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 30 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://naavlad.ru/tags/bot/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>FSM Aiogram</title>
+      <link>https://naavlad.ru/notes/telegram_bots/aiogram/fsm/fsm-aiogram/</link>
+      <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/telegram_bots/aiogram/fsm/fsm-aiogram/</guid>
+      <description>Структура init  # bot/init_bot.py from aiogram import Bot, Dispatcher from aiogram.contrib.fsm_storage.memory import MemoryStorage from settings import TOKEN_BOT bot = Bot(token=TOKEN_BOT) storage = MemoryStorage() dp = Dispatcher(bot, storage=storage)     Структура callbasks  # bot/callbasks/&amp;lt;name.py&amp;gt; from aiogram import types from aiogram.dispatcher import FSMContext from aiogram.dispatcher.filters.state import State, StatesGroup from bot.init_bot import dp class WalletState(StatesGroup): input_name = State() input_description = State() @dp.callback_query_handler(text=&amp;#34;wallets_create&amp;#34;) async def start_state_input_name(call: types.CallbackQuery): &amp;#34;&amp;#34;&amp;#34;Handler callback start State Начало создания Wallet Вход в WalletState Получение name : input_name &amp;#34;&amp;#34;&amp;#34; await call.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Issues git submodule.</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="/google-fonts/Mulish/mulish.css"/>
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+<meta property="og:title" content="Issues git submodule." />
+<meta property="og:description" content="Already exists in the index Эта ошибка означает, что папка проекта уже существует в индексе. Смотрим, что есть в индексе:
+git ls-files --stage projectfolder Первый столбец - тип объекта в индексе в projectfolder.
+Я подозреваю, что вы увидите что-то вроде:
+160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0 projectfolder (т.е. строка, начинающаяся с 160000), и в этом случае репозиторий в projectfolder уже добавлен как &ldquo;gitlink&rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naavlad.ru/notes/git/submodules/issue/" /><meta property="article:section" content="notes" />
+
+
+
+
+
+    
+    
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="/css/layouts/notes.css">
+  <link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+
+    
+
+    
+
+      
+      
+      <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91605314, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+      </script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/91605314" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      
+      
+
+      
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0FF9ZLYH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-KC0FF9ZLYH');
+        </script>
+      
+      
+
+    
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      naavlad.ru</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/notes/git/">Git</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/notes/git/submodules/issue/" title="Issues git submodule">Issues git submodule</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/postgresql/">PostgreSQL</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/postgresql/postgresql_cli/" title="CLI">CLI</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/python/">Python</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/variables/" title="Variables">Variables</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/data_types/" title="Data Types">Data Types</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/">Telegram bots</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/aiogram/">Aiogram</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/telegram_bots/aiogram/fsm/fsm-aiogram/" title="FSM Aiogram">FSM Aiogram</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/vscode_settings/">VS Code</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/vscode_settings/custom_settings/chg_color/" title="Подсветка синтаксиса">Подсветка синтаксиса</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid note-card-holder" id="note-card-holder">
+      <div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Already exists in the index</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Эта ошибка означает, что папка проекта уже существует в индексе.
+Смотрим, что есть в индексе:</p>
+<pre tabindex="0"><code>git ls-files --stage projectfolder
+</code></pre><p>Первый столбец - тип объекта в индексе в <code>projectfolder</code>.</p>
+<p>Я подозреваю, что вы увидите что-то вроде:</p>
+<pre tabindex="0"><code>160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   projectfolder
+</code></pre><p>(т.е. строка, начинающаяся с <code>160000</code>), и в этом случае репозиторий в <code>projectfolder</code> уже добавлен как &ldquo;gitlink&rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</p>
+<pre tabindex="0"><code>git rm --cached projectfolder
+git submodule add url_to_repo projectfolder
+</code></pre><p>Однако также возможно, что вы увидите много больших двоичных объектов в списке (с файловыми режимами <code>100644</code> и <code>100755</code>), что может означать, что вы неправильно удалили файлы в <code> `projectfolder</code> перед копированием нового репозитория.</p>
+<p>В этом случае:</p>
+<pre tabindex="0"><code>git rm -r --cached projectfolder
+git submodule add url_to_repo projectfolder
+</code></pre></div>
+            </div>
+        
+    </div>
+</div>
+
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Add git directory is found locally</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Если вы еще не запустили</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm --cached path_to_submodule
+rm -rf path_to_submodule
+</code></pre></div><p>Из <code>.gitmodules file.</code> удалить:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
+        path <span style="color:#f92672">=</span> path_to_submodule
+        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
+</code></pre></div><p>Из <code>.git/config.</code> удалить:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
+        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -rf .git/modules/path_to_submodule
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add https://github.com/path_to_submodule
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://naavlad.ru/#skills">Skills</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+
+              
+                <li><a href=mailto:info@naavlad.ru target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@naavlad.ru</span>
+                </a></li>  
+              
+
+            
+
+              
+                <li><a href=https://github.com/Naavlad target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>github</span>
+                </a></li>
+              
+
+            
+
+              
+                <li><a href=https://don.blognot.co/web/@npl240 target="_blank" rel="noopener">
+                  <span><i class="fab fa-mastodon"></i></span> <span>mastodon</span>
+                </a></li>
+              
+
+            
+
+              
+                <li><a href=https://t.me/naavlad target="_blank" rel="noopener">
+                  <span><i class="fab fa-telegram"></i></span> <span>telegram</span>
+                </a></li>
+              
+
+            
+          </ul>
+        </div>
+        
+
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://naavlad.ru/index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          
+        </div>
+
+        
+        
+          <div class="col-md-4 text-center">
+            © 2021 - 2023 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+          </div>
+        
+        
+        <div class="col-md-4 text-right">
+          
+        </div>
+      </div>
+    </div>
+    
+
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script src="/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/js/note.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+
+
+    
+</body>
+</html>

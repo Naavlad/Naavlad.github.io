@@ -142,6 +142,156 @@
             <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
             <div class="subtree">
                 
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/git/">Git</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/git/submodules/issue/" title="Issues git submodule">Issues git submodule</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/postgresql/">PostgreSQL</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/postgresql/postgresql_cli/" title="CLI">CLI</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/python/">Python</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/variables/" title="Variables">Variables</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/data_types/" title="Data Types">Data Types</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/">Telegram bots</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/aiogram/">Aiogram</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/telegram_bots/aiogram/fsm/fsm-aiogram/" title="FSM Aiogram">FSM Aiogram</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/vscode_settings/">VS Code</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/vscode_settings/custom_settings/chg_color/" title="Подсветка синтаксиса">Подсветка синтаксиса</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
 
             </div>
           </ul>
@@ -167,39 +317,27 @@
         
       
         
-          <p>If you haven&rsquo;t already run</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm --cached path_to_submodule <span style="color:#75715e"># no trailing slash as well as</span>
-rm -rf path_to_submodule
-</code></pre></div><p>Then:</p>
-<p>Delete the relevant lines from the <code>.gitmodules file.</code> e.g. delete these:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
-        path <span style="color:#f92672">=</span> path_to_submodule
-        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
-</code></pre></div><p>Delete the relevant section from <code>.git/config.</code> e.g. delete these:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
-        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -rf .git/modules/path_to_submodule
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add https://github.com/path_to_submodule
-</code></pre></div>
+        
         
       
         
-          <p>That error means that <code>projectfolder</code> is already staged (&ldquo;already exists in the index&rdquo;).
-To find out what&rsquo;s going on here, try to list everything in the index under that folder with:</p>
-<pre tabindex="0"><code>git ls-files --stage projectfolder
-</code></pre><p>The first column of that output will tell you what type of object is in the index at <code>projectfolder</code>. (These look like Unix filemodes, but have special meanings in git.)</p>
-<p>I suspect that you will see something like:</p>
-<pre tabindex="0"><code>160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   projectfolder
-</code></pre><p>(i.e. a line beginning with <code>160000</code>), in which case the repository in <code>projectfolder</code> has already been added as a &ldquo;gitlink&rdquo;. If it doesn&rsquo;t appear in the output of git submodule, and you want to re-add it as a submodule, you can do:</p>
-<pre tabindex="0"><code>git rm --cached projectfolder
-</code></pre><p>&hellip; to unstage it, and then:</p>
-<pre tabindex="0"><code>git submodule add url_to_repo projectfolder
-</code></pre><p>&hellip; to add the repository as a submodule.</p>
-<p>However, it&rsquo;s also possible that you will see many blobs listed (with file modes <code>100644</code> and <code>100755</code>), which would suggest to me that you didn&rsquo;t properly unstage the files in <code>projectfolder</code> before copying the new repository into place. If that&rsquo;s the case, you can do the following to unstage all of those files:</p>
-<pre tabindex="0"><code>git rm -r --cached projectfolder
-</code></pre><p>&hellip; and then add the submodule with:</p>
-<pre tabindex="0"><code>git submodule add url_to_repo projectfolder
-</code></pre>
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
         
       
         
@@ -383,7 +521,7 @@ To find out what&rsquo;s going on here, try to list everything in the index unde
         
         
           <div class="col-md-4 text-center">
-            © 2021 - 2022 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+            © 2021 - 2023 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
           </div>
         
         

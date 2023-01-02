@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VS Code on naavlad.ru</title>
+    <link>https://naavlad.ru/notes/vscode_settings/</link>
+    <description>Recent content in VS Code on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://naavlad.ru/notes/vscode_settings/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Как изменить цвета подсветки синтаксиса в VS Code</title>
+      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</guid>
+      <description>Изменить цвета подсветки синтаксиса в VS Code Customizing a Color Theme
+Editor syntax highlighting
+Чтобы настроить цвета подсветки синтаксиса редактора, используйте editor.tokenColorCustomizations в файле настроек пользователя settings.json:
+    Изменить для наиболее распространенных конструкций Предварительно настроенный набор синтаксических токенов (&amp;ldquo;комментарии&amp;rdquo;, &amp;ldquo;строки&amp;rdquo;, &amp;hellip;) доступен для наиболее распространенных конструкций
+Изменить цвет комментариев в Default Dark+ :
+&amp;#34;editor.tokenColorCustomizations&amp;#34;: { &amp;#34;[Default Dark+]&amp;#34;: { &amp;#34;strings&amp;#34;: &amp;#34;#679267&amp;#34;, }, }     Непосредственная настройка правил TextMate Узнать значение scope для того элемента, который вы хотите изменить:</description>
+    </item>
+    
+    
+  </channel>
+</rss>

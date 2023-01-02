@@ -5,41 +5,81 @@
     <link>https://naavlad.ru/notes/</link>
     <description>Recent content in Notes on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 07 Dec 2022 14:16:20 +0300</lastBuildDate><atom:link href="https://naavlad.ru/notes/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Git Submodule: &#39;add git directory is found locally&#39;</title>
-      <link>https://naavlad.ru/notes/git-submodule-add-git-directory-is-found-locally/</link>
-      <pubDate>Wed, 07 Dec 2022 14:16:20 +0300</pubDate>
+    <lastBuildDate>Fri, 30 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://naavlad.ru/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>FSM Aiogram</title>
+      <link>https://naavlad.ru/notes/telegram_bots/aiogram/fsm/fsm-aiogram/</link>
+      <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://naavlad.ru/notes/git-submodule-add-git-directory-is-found-locally/</guid>
-      <description>If you haven&amp;rsquo;t already run
-git rm --cached path_to_submodule # no trailing slash as well as rm -rf path_to_submodule Then:
-Delete the relevant lines from the .gitmodules file. e.g. delete these:
-[submodule &amp;#34;path_to_submodule&amp;#34;] path = path_to_submodule url = https://github.com/path_to_submodule Delete the relevant section from .git/config. e.g. delete these:
-[submodule &amp;#34;path_to_submodule&amp;#34;] url = https://github.com/path_to_submodule rm -rf .git/modules/path_to_submodule git submodule add https://github.com/path_to_submodule </description>
+      <guid>https://naavlad.ru/notes/telegram_bots/aiogram/fsm/fsm-aiogram/</guid>
+      <description>Структура init  # bot/init_bot.py from aiogram import Bot, Dispatcher from aiogram.contrib.fsm_storage.memory import MemoryStorage from settings import TOKEN_BOT bot = Bot(token=TOKEN_BOT) storage = MemoryStorage() dp = Dispatcher(bot, storage=storage)     Структура callbasks  # bot/callbasks/&amp;lt;name.py&amp;gt; from aiogram import types from aiogram.dispatcher import FSMContext from aiogram.dispatcher.filters.state import State, StatesGroup from bot.init_bot import dp class WalletState(StatesGroup): input_name = State() input_description = State() @dp.callback_query_handler(text=&amp;#34;wallets_create&amp;#34;) async def start_state_input_name(call: types.CallbackQuery): &amp;#34;&amp;#34;&amp;#34;Handler callback start State Начало создания Wallet Вход в WalletState Получение name : input_name &amp;#34;&amp;#34;&amp;#34; await call.</description>
+    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <item>
+      <title>Python Variables</title>
+      <link>https://naavlad.ru/notes/python/basics/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/python/basics/variables/</guid>
+      <description>Creating Variable Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+x = 5 y = &amp;#34;John&amp;#34; print(x) print(y)     Dynamic Type Variables do not need to be declared with any particular type, and can even change type after they have been set.
+x = 4 # x is of type int x = &amp;#34;Sally&amp;#34; # x is now of type str     Casting x = str(3) # x will be &amp;#39;3&amp;#39; y = int(3) # y will be 3 z = float(3) # z will be 3.</description>
     </item>
     
     <item>
-      <title>Git submodule: &#39;already exists in the index&#39;</title>
-      <link>https://naavlad.ru/notes/git-submodule-already-exists-in-index/</link>
-      <pubDate>Wed, 07 Dec 2022 13:47:56 +0300</pubDate>
+      <title>Python Data Types</title>
+      <link>https://naavlad.ru/notes/python/basics/data_types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://naavlad.ru/notes/git-submodule-already-exists-in-index/</guid>
-      <description>That error means that projectfolder is already staged (&amp;ldquo;already exists in the index&amp;rdquo;). To find out what&amp;rsquo;s going on here, try to list everything in the index under that folder with:
-git ls-files --stage projectfolder The first column of that output will tell you what type of object is in the index at projectfolder. (These look like Unix filemodes, but have special meanings in git.)
-I suspect that you will see something like:</description>
+      <guid>https://naavlad.ru/notes/python/basics/data_types/</guid>
+      <description>Built-in Data Types | Category | Built-in Data Types | |        &amp;ndash; |                       | | Text Type | str | | Numeric Types | int, float, complex | | Sequence Types | list, tuple, range | | Mapping Type | dict | | Set Types | set, frozenset | | Boolean Type | bool | | Binary Types | bytes, bytearray, memoryview |      Get Type of a Variable Print the data type of the variable x:</description>
     </item>
     
+    <item>
+      <title>Issues git submodule.</title>
+      <link>https://naavlad.ru/notes/git/submodules/issue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/git/submodules/issue/</guid>
+      <description>Already exists in the index Эта ошибка означает, что папка проекта уже существует в индексе. Смотрим, что есть в индексе:
+git ls-files --stage projectfolder Первый столбец - тип объекта в индексе в projectfolder.
+Я подозреваю, что вы увидите что-то вроде:
+160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0 projectfolder (т.е. строка, начинающаяся с 160000), и в этом случае репозиторий в projectfolder уже добавлен как &amp;ldquo;gitlink&amp;rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</description>
+    </item>
     
+    <item>
+      <title>Подключение к PostgreSQL CLI</title>
+      <link>https://naavlad.ru/notes/postgresql/postgresql_cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/postgresql/postgresql_cli/</guid>
+      <description>PostgreSQL CLI &amp;gt; CD C:\Program Files\PostgreSQL\14\bin &amp;gt; psql -V # проверка версии psql (PostgreSQL) 14.2     Изменение кодировки &amp;gt; chcp 1251 Текущая кодовая страница: 1251 psql -U postgres # изменение кодировки в консоли psql postgres=# \! chcp 1251 postgres это пользователь, подключимся этим пользователем к дефолтной базе postgres postgres=# \c postgres Вы подключены к базе данных &amp;quot;postgres&amp;quot; как пользователь &amp;quot;postgres&amp;quot;. postgres=# postgres=# create database shop; CREATE DATABASE postgres=# \c shop Вы подключены к базе данных &amp;quot;shop&amp;quot; как пользователь &amp;quot;postgres&amp;quot;.</description>
+    </item>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <item>
+      <title>Как изменить цвета подсветки синтаксиса в VS Code</title>
+      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</guid>
+      <description>Изменить цвета подсветки синтаксиса в VS Code Customizing a Color Theme
+Editor syntax highlighting
+Чтобы настроить цвета подсветки синтаксиса редактора, используйте editor.tokenColorCustomizations в файле настроек пользователя settings.json:
+    Изменить для наиболее распространенных конструкций Предварительно настроенный набор синтаксических токенов (&amp;ldquo;комментарии&amp;rdquo;, &amp;ldquo;строки&amp;rdquo;, &amp;hellip;) доступен для наиболее распространенных конструкций
+Изменить цвет комментариев в Default Dark+ :
+&amp;#34;editor.tokenColorCustomizations&amp;#34;: { &amp;#34;[Default Dark+]&amp;#34;: { &amp;#34;strings&amp;#34;: &amp;#34;#679267&amp;#34;, }, }     Непосредственная настройка правил TextMate Узнать значение scope для того элемента, который вы хотите изменить:</description>
+    </item>
     
     
     

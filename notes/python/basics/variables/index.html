@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Variables</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="/google-fonts/Mulish/mulish.css"/>
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+<meta property="og:title" content="Python Variables" />
+<meta property="og:description" content="Creating Variable Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+x = 5 y = &#34;John&#34; print(x) print(y)     Dynamic Type Variables do not need to be declared with any particular type, and can even change type after they have been set.
+x = 4 # x is of type int x = &#34;Sally&#34; # x is now of type str     Casting x = str(3) # x will be &#39;3&#39; y = int(3) # y will be 3 z = float(3) # z will be 3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naavlad.ru/notes/python/basics/variables/" /><meta property="article:section" content="notes" />
+
+
+
+
+
+    
+    
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="/css/layouts/notes.css">
+  <link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+
+    
+
+    
+
+      
+      
+      <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91605314, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+      </script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/91605314" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      
+      
+
+      
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0FF9ZLYH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-KC0FF9ZLYH');
+        </script>
+      
+      
+
+    
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      naavlad.ru</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/git/">Git</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/git/submodules/issue/" title="Issues git submodule">Issues git submodule</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/postgresql/">PostgreSQL</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/postgresql/postgresql_cli/" title="CLI">CLI</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/notes/python/">Python</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/notes/python/basics/variables/" title="Variables">Variables</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/data_types/" title="Data Types">Data Types</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/">Telegram bots</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/aiogram/">Aiogram</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/telegram_bots/aiogram/fsm/fsm-aiogram/" title="FSM Aiogram">FSM Aiogram</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/vscode_settings/">VS Code</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/vscode_settings/custom_settings/chg_color/" title="Подсветка синтаксиса">Подсветка синтаксиса</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid note-card-holder" id="note-card-holder">
+      <!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Creating Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+print(x)
+print(y)
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Dynamic Type</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>       <span style="color:#75715e"># x is of type int</span>
+x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sally&#34;</span> <span style="color:#75715e"># x is now of type str</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Casting</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> str(<span style="color:#ae81ff">3</span>)    <span style="color:#75715e"># x will be &#39;3&#39;</span>
+y <span style="color:#f92672">=</span> int(<span style="color:#ae81ff">3</span>)    <span style="color:#75715e"># y will be 3</span>
+z <span style="color:#f92672">=</span> float(<span style="color:#ae81ff">3</span>)  <span style="color:#75715e"># z will be 3.0</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Getting Type of a Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>You can get the data type of a variable with the <code>type()</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+print(type(x))
+print(type(y))
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Single Quote vs Double Quote</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+<span style="color:#75715e"># is the same as</span>
+x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;John&#39;</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Case sensitivity</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variable names are case-sensitive. This will create two variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+A <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sally&#34;</span>
+<span style="color:#75715e">#A will not overwrite a</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Variable naming convention</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variable name must follow the criteria:</p>
+<ul>
+<li>A variable name must start with a letter or the underscore character</li>
+<li>A variable name cannot start with a number</li>
+<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+<li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">myvar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+my_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+_my_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+myVar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+MYVAR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+myvar2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Batch Assignment: Different values at different variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Python allows you to assign values to multiple variables in one line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x, y, z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Orange&#34;</span>, <span style="color:#e6db74">&#34;Banana&#34;</span>, <span style="color:#e6db74">&#34;Cherry&#34;</span>
+print(x)
+print(y)
+print(z)
+</code></pre></div><p>The number of variable in left side must be equal to the number of values in right side. Otherwise, it will give error.</p>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Batch Assignment: One value into multiple variables</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> y <span style="color:#f92672">=</span> z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Orange&#34;</span>
+print(x)
+print(y)
+print(z)
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Unpacking a Collection</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>If you have a collection of values in a list, tuple etc. Python allows you extract the values into variables. This is called unpacking.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>]
+x, y, z <span style="color:#f92672">=</span> fruits
+print(x)
+print(y)
+print(z)
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Global Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variables that are created outside of a function (as in all of the examples above) are known as global variables.</p>
+<p>Global variables can be used by everyone, both inside of functions and outside.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;awesome&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>():
+  x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fantastic&#34;</span>
+  print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+
+myfunc()
+
+print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Python is fantastic
+Python is awesome
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Global Variable using `global` Keyword</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>We can also expose a local variable from inside a function to act as a  global variable using <code>global</code> keyword.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>():
+  <span style="color:#66d9ef">global</span> x
+  x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fantastic&#34;</span>
+
+myfunc()
+
+print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Python is fantastic
+</code></pre></div><p><strong>Example 2:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;awesome&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>():
+  <span style="color:#66d9ef">global</span> x
+  x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fantastic&#34;</span>
+
+myfunc()
+
+print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Python is fantastic
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://naavlad.ru/#skills">Skills</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+
+              
+                <li><a href=mailto:info@naavlad.ru target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@naavlad.ru</span>
+                </a></li>  
+              
+
+            
+
+              
+                <li><a href=https://github.com/Naavlad target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>github</span>
+                </a></li>
+              
+
+            
+
+              
+                <li><a href=https://don.blognot.co/web/@npl240 target="_blank" rel="noopener">
+                  <span><i class="fab fa-mastodon"></i></span> <span>mastodon</span>
+                </a></li>
+              
+
+            
+
+              
+                <li><a href=https://t.me/naavlad target="_blank" rel="noopener">
+                  <span><i class="fab fa-telegram"></i></span> <span>telegram</span>
+                </a></li>
+              
+
+            
+          </ul>
+        </div>
+        
+
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://naavlad.ru/index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          
+        </div>
+
+        
+        
+          <div class="col-md-4 text-center">
+            © 2021 - 2023 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+          </div>
+        
+        
+        <div class="col-md-4 text-right">
+          
+        </div>
+      </div>
+    </div>
+    
+
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script src="/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/js/note.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+
+
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL on naavlad.ru</title>
+    <link>https://naavlad.ru/notes/postgresql/</link>
+    <description>Recent content in PostgreSQL on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://naavlad.ru/notes/postgresql/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Подключение к PostgreSQL CLI</title>
+      <link>https://naavlad.ru/notes/postgresql/postgresql_cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/postgresql/postgresql_cli/</guid>
+      <description>PostgreSQL CLI &amp;gt; CD C:\Program Files\PostgreSQL\14\bin &amp;gt; psql -V # проверка версии psql (PostgreSQL) 14.2     Изменение кодировки &amp;gt; chcp 1251 Текущая кодовая страница: 1251 psql -U postgres # изменение кодировки в консоли psql postgres=# \! chcp 1251 postgres это пользователь, подключимся этим пользователем к дефолтной базе postgres postgres=# \c postgres Вы подключены к базе данных &amp;quot;postgres&amp;quot; как пользователь &amp;quot;postgres&amp;quot;. postgres=# postgres=# create database shop; CREATE DATABASE postgres=# \c shop Вы подключены к базе данных &amp;quot;shop&amp;quot; как пользователь &amp;quot;postgres&amp;quot;.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

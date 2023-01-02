@@ -142,6 +142,156 @@
             <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
             <div class="subtree">
                 
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/git/">Git</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/git/submodules/issue/" title="Issues git submodule">Issues git submodule</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/postgresql/">PostgreSQL</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/postgresql/postgresql_cli/" title="CLI">CLI</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/python/">Python</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/variables/" title="Variables">Variables</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/data_types/" title="Data Types">Data Types</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/">Telegram bots</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/telegram_bots/aiogram/">Aiogram</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/telegram_bots/aiogram/fsm/fsm-aiogram/" title="FSM Aiogram">FSM Aiogram</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/vscode_settings/">VS Code</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/vscode_settings/custom_settings/chg_color/" title="Подсветка синтаксиса">Подсветка синтаксиса</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
 
             </div>
           </ul>
@@ -159,27 +309,861 @@
       
       
         
+          <!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Creating Variable</span></h5>
         
+            <div class="card">
+                <div class="card-body"><p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+print(x)
+print(y)
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Dynamic Type</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>       <span style="color:#75715e"># x is of type int</span>
+x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sally&#34;</span> <span style="color:#75715e"># x is now of type str</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Casting</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> str(<span style="color:#ae81ff">3</span>)    <span style="color:#75715e"># x will be &#39;3&#39;</span>
+y <span style="color:#f92672">=</span> int(<span style="color:#ae81ff">3</span>)    <span style="color:#75715e"># y will be 3</span>
+z <span style="color:#f92672">=</span> float(<span style="color:#ae81ff">3</span>)  <span style="color:#75715e"># z will be 3.0</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Getting Type of a Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>You can get the data type of a variable with the <code>type()</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+print(type(x))
+print(type(y))
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Single Quote vs Double Quote</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+<span style="color:#75715e"># is the same as</span>
+x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;John&#39;</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Case sensitivity</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variable names are case-sensitive. This will create two variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+A <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sally&#34;</span>
+<span style="color:#75715e">#A will not overwrite a</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Variable naming convention</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variable name must follow the criteria:</p>
+<ul>
+<li>A variable name must start with a letter or the underscore character</li>
+<li>A variable name cannot start with a number</li>
+<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+<li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">myvar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+my_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+_my_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+myVar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+MYVAR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+myvar2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Batch Assignment: Different values at different variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Python allows you to assign values to multiple variables in one line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x, y, z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Orange&#34;</span>, <span style="color:#e6db74">&#34;Banana&#34;</span>, <span style="color:#e6db74">&#34;Cherry&#34;</span>
+print(x)
+print(y)
+print(z)
+</code></pre></div><p>The number of variable in left side must be equal to the number of values in right side. Otherwise, it will give error.</p>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Batch Assignment: One value into multiple variables</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> y <span style="color:#f92672">=</span> z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Orange&#34;</span>
+print(x)
+print(y)
+print(z)
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Unpacking a Collection</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>If you have a collection of values in a list, tuple etc. Python allows you extract the values into variables. This is called unpacking.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>]
+x, y, z <span style="color:#f92672">=</span> fruits
+print(x)
+print(y)
+print(z)
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Global Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Variables that are created outside of a function (as in all of the examples above) are known as global variables.</p>
+<p>Global variables can be used by everyone, both inside of functions and outside.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;awesome&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>():
+  x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fantastic&#34;</span>
+  print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+
+myfunc()
+
+print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Python is fantastic
+Python is awesome
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Global Variable using `global` Keyword</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>We can also expose a local variable from inside a function to act as a  global variable using <code>global</code> keyword.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>():
+  <span style="color:#66d9ef">global</span> x
+  x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fantastic&#34;</span>
+
+myfunc()
+
+print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Python is fantastic
+</code></pre></div><p><strong>Example 2:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;awesome&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myfunc</span>():
+  <span style="color:#66d9ef">global</span> x
+  x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fantastic&#34;</span>
+
+myfunc()
+
+print(<span style="color:#e6db74">&#34;Python is &#34;</span> <span style="color:#f92672">+</span> x)
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Python is fantastic
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
+          <!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Изменить цвета подсветки синтаксиса в VS Code</span></h5>
         
+            <div class="card">
+                <div class="card-body"><p><a href="https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme">Customizing a Color Theme</a></p>
+<p><a href="https://code.visualstudio.com/docs/getstarted/themes#_editor-syntax-highlighting">Editor syntax highlighting</a></p>
+<p>Чтобы настроить цвета подсветки синтаксиса редактора, используйте <code>editor.tokenColorCustomizations</code> в файле настроек пользователя <code>settings.json</code>:</p>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Изменить для наиболее распространенных конструкций</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Предварительно настроенный набор синтаксических токенов (&ldquo;комментарии&rdquo;, &ldquo;строки&rdquo;, &hellip;) доступен для наиболее распространенных конструкций</p>
+<p>Изменить цвет комментариев в <code>Default Dark+</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">&#34;editor.tokenColorCustomizations&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;[Default Dark+]&#34;</span>: <span style="color:#f92672">{</span>
+        <span style="color:#e6db74">&#34;strings&#34;</span>: <span style="color:#e6db74">&#34;#679267&#34;</span>,
+    <span style="color:#f92672">}</span>,
+<span style="color:#f92672">}</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Непосредственная настройка правил TextMate</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Узнать значение <code>scope</code> для того элемента, который вы хотите изменить:<br>
+В командной строке(Ctrl+Shift+P) набрать
+<code>Developer: Inspect Editor Tokens and Scopes</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#e6db74">&#34;editor.tokenColorCustomizations&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;[Default Dark+]&#34;</span>: <span style="color:#f92672">{</span>
+      <span style="color:#e6db74">&#34;textMateRules&#34;</span>: <span style="color:#f92672">[</span>
+        <span style="color:#f92672">{</span>
+          <span style="color:#e6db74">&#34;scope&#34;</span>: <span style="color:#e6db74">&#34;string.quoted.docstring.multi.python&#34;</span>,
+          <span style="color:#e6db74">&#34;settings&#34;</span>: <span style="color:#f92672">{</span>
+            <span style="color:#e6db74">&#34;foreground&#34;</span>: <span style="color:#e6db74">&#34;#616161&#34;</span>
+          <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>,
+      <span style="color:#f92672">]</span>
+    <span style="color:#f92672">}</span>,
+ <span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide">Semantic Highlight Guide</a></p>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
+          <!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>PostgreSQL CLI</span></h5>
         
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; CD C:<span style="color:#ae81ff">\P</span>rogram Files<span style="color:#ae81ff">\P</span>ostgreSQL<span style="color:#ae81ff">\1</span>4<span style="color:#ae81ff">\b</span>in
+&gt; psql -V <span style="color:#75715e"># проверка версии</span>
+psql <span style="color:#f92672">(</span>PostgreSQL<span style="color:#f92672">)</span> 14.2
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Изменение кодировки</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><pre tabindex="0"><code>&gt; chcp 1251
+Текущая кодовая страница: 1251
+psql -U postgres
+# изменение кодировки в консоли psql
+postgres=# \! chcp 1251
+postgres это пользователь, подключимся этим пользователем к дефолтной базе postgres
+
+postgres=# \c postgres
+Вы подключены к базе данных &quot;postgres&quot; как пользователь &quot;postgres&quot;.
+
+postgres=#
+
+postgres=# create database shop;
+CREATE DATABASE
+
+postgres=# \c shop
+Вы подключены к базе данных &quot;shop&quot; как пользователь &quot;postgres&quot;.
+shop=#
+</code></pre></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Основные команды</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">\q</span> - Выход из консоли
+<span style="color:#ae81ff">\?</span> - Справка по командам консольного клиента psql
+<span style="color:#ae81ff">\h</span> - Справка по доступным командам SQL
+<span style="color:#ae81ff">\h</span> &lt;команда&gt; - Справка по конкретной команде
+
+<span style="color:#ae81ff">\l</span> - Список баз данных сервера
+<span style="color:#ae81ff">\c</span> &lt;dbname&gt; - Выбор базы данных
+<span style="color:#ae81ff">\d</span>t - Список таблиц в текущей базе данных
+<span style="color:#ae81ff">\d</span>u - Список пользователей
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
+          <!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Структура init </span></h5>
         
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># bot/init_bot.py</span>
+
+from aiogram import Bot, Dispatcher
+from aiogram.contrib.fsm_storage.memory import MemoryStorage
+
+from settings import TOKEN_BOT
+
+bot <span style="color:#f92672">=</span> Bot<span style="color:#f92672">(</span>token<span style="color:#f92672">=</span>TOKEN_BOT<span style="color:#f92672">)</span>
+storage <span style="color:#f92672">=</span> MemoryStorage<span style="color:#f92672">()</span>
+dp <span style="color:#f92672">=</span> Dispatcher<span style="color:#f92672">(</span>bot, storage<span style="color:#f92672">=</span>storage<span style="color:#f92672">)</span>
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Структура callbasks </span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># bot/callbasks/&lt;name.py&gt;</span>
+
+from aiogram import types
+from aiogram.dispatcher import FSMContext
+from aiogram.dispatcher.filters.state import State, StatesGroup
+
+from bot.init_bot import dp
+
+
+class WalletState<span style="color:#f92672">(</span>StatesGroup<span style="color:#f92672">)</span>:
+    input_name <span style="color:#f92672">=</span> State<span style="color:#f92672">()</span>
+    input_description <span style="color:#f92672">=</span> State<span style="color:#f92672">()</span>
+
+
+@dp.callback_query_handler<span style="color:#f92672">(</span>text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;wallets_create&#34;</span><span style="color:#f92672">)</span>
+async def start_state_input_name<span style="color:#f92672">(</span>call: types.CallbackQuery<span style="color:#f92672">)</span>:
+    <span style="color:#e6db74">&#34;&#34;&#34;Handler callback start State
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    Начало создания Wallet
+</span><span style="color:#e6db74">        Вход в WalletState
+</span><span style="color:#e6db74">        Получение name : input_name
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    await call.message.edit_reply_markup<span style="color:#f92672">()</span>
+    await call.message.answer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Введите:&#34;</span><span style="color:#f92672">)</span>
+    await WalletState.input_name.set<span style="color:#f92672">()</span>
+
+
+@dp.message_handler<span style="color:#f92672">(</span>state<span style="color:#f92672">=</span>WalletState.input_name<span style="color:#f92672">)</span>
+async def state_input_description<span style="color:#f92672">(</span>
+    message: types.Message, state: FSMContext
+<span style="color:#f92672">)</span>:
+    <span style="color:#e6db74">&#34;&#34;&#34;State WalletState next input_name
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    Получаем name из message.text
+</span><span style="color:#e6db74">    Запись name в state
+</span><span style="color:#e6db74">    Получение description : input_description
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    <span style="color:#75715e"># записываем полученное название группы в state</span>
+    wallet_name <span style="color:#f92672">=</span> message.text
+    async with state.proxy<span style="color:#f92672">()</span> as data:
+        data<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;wallet_name&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> wallet_name
+
+    await message.answer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Введите описание:&#34;</span><span style="color:#f92672">)</span>
+    await WalletState.input_description.set<span style="color:#f92672">()</span>
+
+
+@dp.message_handler<span style="color:#f92672">(</span>state<span style="color:#f92672">=</span>WalletState.input_description<span style="color:#f92672">)</span>
+async def finish_state<span style="color:#f92672">(</span>message: types.Message, state: FSMContext<span style="color:#f92672">)</span>:
+    <span style="color:#e6db74">&#34;&#34;&#34;State WalletState next input_description
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    Достаем name из state
+</span><span style="color:#e6db74">    Получаем description из message.text
+</span><span style="color:#e6db74">    создаем кошелек
+</span><span style="color:#e6db74">    закрываем state : state.finish
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    <span style="color:#75715e"># Получаем название кошелька из state</span>
+    data <span style="color:#f92672">=</span> await state.get_data<span style="color:#f92672">()</span>
+    wallet_name <span style="color:#f92672">=</span> data.get<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;wallet_name&#34;</span><span style="color:#f92672">)</span>
+
+    wallet_description <span style="color:#f92672">=</span> message.text
+    wallet_owner_id <span style="color:#f92672">=</span> message.from_user.id
+
+    wallet <span style="color:#f92672">=</span> WalletCRUD.create<span style="color:#f92672">(</span>
+        name<span style="color:#f92672">=</span>wallet_name,
+        description<span style="color:#f92672">=</span>wallet_description,
+        owner_id<span style="color:#f92672">=</span>wallet_owner_id,
+    <span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">if</span> wallet:
+        await message.answer<span style="color:#f92672">(</span>f<span style="color:#e6db74">&#34;✅ Кошелек создан.&#34;</span><span style="color:#f92672">)</span>
+        await state.finish<span style="color:#f92672">()</span>
+        logger.info<span style="color:#f92672">(</span>f<span style="color:#e6db74">&#34;Оk. Wallet created. {wallet.id}&#34;</span><span style="color:#f92672">)</span>
+
+    <span style="color:#66d9ef">else</span>:
+        await message.answer<span style="color:#f92672">(</span>f<span style="color:#e6db74">&#34;❗ Что то пошло не так...&#34;</span><span style="color:#f92672">)</span>
+        await state.finish<span style="color:#f92672">()</span>
+        logger.info<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error Wallet created.&#34;</span><span style="color:#f92672">)</span>
+
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
+          <div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Already exists in the index</span></h5>
         
+            <div class="card">
+                <div class="card-body"><p>Эта ошибка означает, что папка проекта уже существует в индексе.
+Смотрим, что есть в индексе:</p>
+<pre tabindex="0"><code>git ls-files --stage projectfolder
+</code></pre><p>Первый столбец - тип объекта в индексе в <code>projectfolder</code>.</p>
+<p>Я подозреваю, что вы увидите что-то вроде:</p>
+<pre tabindex="0"><code>160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   projectfolder
+</code></pre><p>(т.е. строка, начинающаяся с <code>160000</code>), и в этом случае репозиторий в <code>projectfolder</code> уже добавлен как &ldquo;gitlink&rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</p>
+<pre tabindex="0"><code>git rm --cached projectfolder
+git submodule add url_to_repo projectfolder
+</code></pre><p>Однако также возможно, что вы увидите много больших двоичных объектов в списке (с файловыми режимами <code>100644</code> и <code>100755</code>), что может означать, что вы неправильно удалили файлы в <code> `projectfolder</code> перед копированием нового репозитория.</p>
+<p>В этом случае:</p>
+<pre tabindex="0"><code>git rm -r --cached projectfolder
+git submodule add url_to_repo projectfolder
+</code></pre></div>
+            </div>
+        
+    </div>
+</div>
+
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Add git directory is found locally</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Если вы еще не запустили</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm --cached path_to_submodule
+rm -rf path_to_submodule
+</code></pre></div><p>Из <code>.gitmodules file.</code> удалить:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
+        path <span style="color:#f92672">=</span> path_to_submodule
+        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
+</code></pre></div><p>Из <code>.git/config.</code> удалить:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
+        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -rf .git/modules/path_to_submodule
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add https://github.com/path_to_submodule
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
+          <!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Built-in Data Types</span></h5>
         
+            <div class="card">
+                <div class="card-body">| Category       | Built-in Data Types                |
+|</div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body">&ndash; |</div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"><ul>
+<li>|
+| Text Type      | <code>str</code>                              |
+| Numeric Types  | <code>int</code>, <code>float</code>, <code>complex</code>          |
+| Sequence Types | <code>list</code>, <code>tuple</code>, <code>range</code>           |
+| Mapping Type   | <code>dict</code>                             |
+| Set Types      | <code>set</code>, <code>frozenset</code>                 |
+| Boolean Type   | <code>bool</code>                             |
+| Binary Types   | <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code> |</li>
+</ul>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Get Type of a Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Print the data type of the variable x:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+print(type(x))
+</code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;class <span style="color:#e6db74">&#39;int&#39;</span>&gt;
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card large-note">
+    <div class="item">
+        <h5 class="note-title"><span>Setting Data-Type of a Variable</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>When we assign something into a variable, python dynamically set it&rsquo;s data type according to the value we are trying to assign.</p>
+<p>| Example                                        | Data-Type    |
+|</p>
+</div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"><ul>
+<li>|</li>
+</ul>
+</div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body">|
+| <code>x = &quot;Hello World&quot;</code>                            | <code>str</code>        |
+| <code>x = 20</code>                                       | <code>int</code>        |
+| <code>x = 20.5</code>                                     | <code>float</code>      |
+| <code>x = 1j</code>                                       | <code>complex</code>    |
+| <code>x = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]</code>            | <code>list</code>       |
+| <code>x = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)</code>            | <code>tuple</code>      |
+| <code>x = range(6)</code>                                 | <code>range</code>      |
+| <code>x = {&quot;name&quot; : &quot;John&quot;, &quot;age&quot; : 36}</code>            | <code>dict</code>       |
+| <code>x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}</code>            | <code>set</code>        |
+| <code>x = frozenset({&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;})</code> | <code>frozenset</code>  |
+| <code>x = True</code>                                     | <code>bool</code>       |
+| <code>x = b&quot;Hello&quot;</code>                                 | <code>bytes</code>      |
+| <code>x = bytearray(5)</code>                             | <code>bytearray</code>  |
+| <code>x = memoryview(bytes(5))</code>                     | <code>memoryview</code> |</div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Setting Specific Data-Type</span></h5>
+        
+            <div class="card">
+                <div class="card-body">| Example                                        | Data Type    |
+|</div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"><ul>
+<li>|</li>
+</ul>
+</div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body">|
+| <code>x = str(&quot;Hello World&quot;)</code>                       | <code>str</code>        |
+| <code>x = int(20)</code>                                  | <code>int</code>        |
+| <code>x = float(20.5)</code>                              | <code>float</code>      |
+| <code>x = complex(1j)</code>                              | <code>complex</code>    |
+| <code>x = list((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</code>      | <code>list</code>       |
+| <code>x = tuple((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</code>     | <code>tuple</code>      |
+| <code>x = range(6)</code>                                 | <code>range</code>      |
+| <code>x = dict(name=&quot;John&quot;, age=36)</code>                | <code>dict</code>       |
+| <code>x = set((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</code>       | <code>set</code>        |
+| <code>x = frozenset((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</code> | <code>frozenset</code>  |
+| <code>x = bool(5)</code>                                  | <code>bool</code>       |
+| <code>x = bytes(5)</code>                                 | <code>bytes</code>      |
+| <code>x = bytearray(5)</code>                             | <code>bytearray</code>  |
+| <code>x = memoryview(bytes(5))</code>                     | <code>memoryview</code> |</div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
@@ -375,7 +1359,7 @@
         
         
           <div class="col-md-4 text-center">
-            © 2021 - 2022 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+            © 2021 - 2023 naavlad | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
           </div>
         
         
