@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Git Notes</title>
+    <title>Как изменить цвета подсветки синтаксиса в VS Code</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -26,10 +26,17 @@
 
 
 
-<meta property="og:title" content="Git Notes" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://naavlad.ru/notes/git/" />
+<meta property="og:title" content="Как изменить цвета подсветки синтаксиса в VS Code" />
+<meta property="og:description" content="Изменить цвета подсветки синтаксиса в VS Code Customizing a Color Theme
+Editor syntax highlighting
+Чтобы настроить цвета подсветки синтаксиса редактора, используйте editor.tokenColorCustomizations в файле настроек пользователя settings.json:
+    Изменить для наиболее распространенных конструкций Предварительно настроенный набор синтаксических токенов (&ldquo;комментарии&rdquo;, &ldquo;строки&rdquo;, &hellip;) доступен для наиболее распространенных конструкций
+Изменить цвет комментариев в Default Dark&#43; :
+&#34;editor.tokenColorCustomizations&#34;: { &#34;[Default Dark&#43;]&#34;: { &#34;strings&#34;: &#34;#679267&#34;, }, }     Непосредственная настройка правил TextMate Узнать значение scope для того элемента, который вы хотите изменить:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naavlad.ru/notes/vscode_settings/custom_settings/syntax_highlighting/" /><meta property="article:section" content="notes" />
+
+
 
 
 
@@ -146,15 +153,12 @@
   
   
   
-    
-    
-  
   
     
     <li>
-      <i class="fas fa-minus-circle"></i><a class="active" href="/notes/git/">Git</a>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/git/">Git</a>
       
-      <ul class="active">
+      <ul class="">
         
   
   
@@ -274,12 +278,15 @@
   
   
   
+    
+    
+  
   
     
     <li>
-      <i class="fas fa-plus-circle"></i><a class="" href="/notes/vscode_settings/">VS Code</a>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/notes/vscode_settings/">VS Code</a>
       
-      <ul class="">
+      <ul class="active">
         
   
   
@@ -294,9 +301,12 @@
   
   
   
+    
+    
+  
   
     
-    <li><a class="" href="/notes/vscode_settings/custom_settings/syntax_highlighting/" title="Подсветка синтаксиса">Подсветка синтаксиса</a></li>
+    <li><a class="active" href="/notes/vscode_settings/custom_settings/syntax_highlighting/" title="Подсветка синтаксиса">Подсветка синтаксиса</a></li>
   
 
 
@@ -318,62 +328,69 @@
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid note-card-holder" id="note-card-holder">
-      
-      
-        
-          <div class="note-card auto-note">
+      <!-- raw HTML omitted -->
+<div class="note-card medium-note">
     <div class="item">
-        <h5 class="note-title"><span>Already exists in the index</span></h5>
+        <h5 class="note-title"><span>Изменить цвета подсветки синтаксиса в VS Code</span></h5>
         
             <div class="card">
-                <div class="card-body"><p>Эта ошибка означает, что папка проекта уже существует в индексе.
-Смотрим, что есть в индексе:</p>
-<pre tabindex="0"><code>git ls-files --stage projectfolder
-</code></pre><p>Первый столбец - тип объекта в индексе в <code>projectfolder</code>.</p>
-<p>Я подозреваю, что вы увидите что-то вроде:</p>
-<pre tabindex="0"><code>160000 d00cf29f23627fc54eb992dde6a79112677cd86c 0   projectfolder
-</code></pre><p>(т.е. строка, начинающаяся с <code>160000</code>), и в этом случае репозиторий в <code>projectfolder</code> уже добавлен как &ldquo;gitlink&rdquo;. Если он не отображается в выводе подмодуля git, и вы хотите повторно добавить его как подмодуль, необходимо:</p>
-<pre tabindex="0"><code>git rm --cached projectfolder
-git submodule add url_to_repo projectfolder
-</code></pre><p>Однако также возможно, что вы увидите много больших двоичных объектов в списке (с файловыми режимами <code>100644</code> и <code>100755</code>), что может означать, что вы неправильно удалили файлы в <code> `projectfolder</code> перед копированием нового репозитория.</p>
-<p>В этом случае:</p>
-<pre tabindex="0"><code>git rm -r --cached projectfolder
-git submodule add url_to_repo projectfolder
-</code></pre></div>
+                <div class="card-body"><p><a href="https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme">Customizing a Color Theme</a></p>
+<p><a href="https://code.visualstudio.com/docs/getstarted/themes#_editor-syntax-highlighting">Editor syntax highlighting</a></p>
+<p>Чтобы настроить цвета подсветки синтаксиса редактора, используйте <code>editor.tokenColorCustomizations</code> в файле настроек пользователя <code>settings.json</code>:</p>
+</div>
             </div>
         
     </div>
 </div>
 
-<div class="note-card auto-note">
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
     <div class="item">
-        <h5 class="note-title"><span>Add git directory is found locally</span></h5>
+        <h5 class="note-title"><span>Изменить для наиболее распространенных конструкций</span></h5>
         
             <div class="card">
-                <div class="card-body"><p>Если вы еще не запустили</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm --cached path_to_submodule
-rm -rf path_to_submodule
-</code></pre></div><p>Из <code>.gitmodules file.</code> удалить:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
-        path <span style="color:#f92672">=</span> path_to_submodule
-        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
-</code></pre></div><p>Из <code>.git/config.</code> удалить:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;path_to_submodule&#34;</span><span style="color:#f92672">]</span>
-        url <span style="color:#f92672">=</span> https://github.com/path_to_submodule
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -rf .git/modules/path_to_submodule
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add https://github.com/path_to_submodule
+                <div class="card-body"><p>Предварительно настроенный набор синтаксических токенов (&ldquo;комментарии&rdquo;, &ldquo;строки&rdquo;, &hellip;) доступен для наиболее распространенных конструкций</p>
+<p>Изменить цвет комментариев в <code>Default Dark+</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">&#34;editor.tokenColorCustomizations&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;[Default Dark+]&#34;</span>: <span style="color:#f92672">{</span>
+        <span style="color:#e6db74">&#34;strings&#34;</span>: <span style="color:#e6db74">&#34;#679267&#34;</span>,
+    <span style="color:#f92672">}</span>,
+<span style="color:#f92672">}</span>
 </code></pre></div></div>
             </div>
         
     </div>
 </div>
 
-
+<!-- raw HTML omitted -->
+<div class="note-card medium-note">
+    <div class="item">
+        <h5 class="note-title"><span>Непосредственная настройка правил TextMate</span></h5>
         
-      
+            <div class="card">
+                <div class="card-body"><p>Узнать значение <code>scope</code> для того элемента, который вы хотите изменить:<br>
+В командной строке(Ctrl+Shift+P) набрать
+<code>Developer: Inspect Editor Tokens and Scopes</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#e6db74">&#34;editor.tokenColorCustomizations&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;[Default Dark+]&#34;</span>: <span style="color:#f92672">{</span>
+      <span style="color:#e6db74">&#34;textMateRules&#34;</span>: <span style="color:#f92672">[</span>
+        <span style="color:#f92672">{</span>
+          <span style="color:#e6db74">&#34;scope&#34;</span>: <span style="color:#e6db74">&#34;string.quoted.docstring.multi.python&#34;</span>,
+          <span style="color:#e6db74">&#34;settings&#34;</span>: <span style="color:#f92672">{</span>
+            <span style="color:#e6db74">&#34;foreground&#34;</span>: <span style="color:#e6db74">&#34;#616161&#34;</span>
+          <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>,
+      <span style="color:#f92672">]</span>
+    <span style="color:#f92672">}</span>,
+ <span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide">Semantic Highlight Guide</a></p>
+</div>
+            </div>
+        
     </div>
-    <div class="paginator">
-      
+</div>
+
+
     </div>
   </div>
 </section>

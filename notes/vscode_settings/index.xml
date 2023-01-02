@@ -5,11 +5,24 @@
     <link>https://naavlad.ru/notes/vscode_settings/</link>
     <description>Recent content in VS Code on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://naavlad.ru/notes/vscode_settings/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Как изменить цвета подсветки синтаксиса в VS Code</title>
-      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</link>
+      <title>Как изменить отступы напраляющих в дереве каталогов в VS Code</title>
+      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/workbench_tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</guid>
+      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/workbench_tree/</guid>
+      <description>Изменить отступ для дерева каталогов в пикселях По умолчанию, отступ 8 пикселей.
+Что бы изменить это значение, или добавляем в файл настройки:
+// Отступ для дерева каталогов в пикселях &amp;#34;workbench.tree.indent&amp;#34;: 15, или
+Результат:
+    </description>
+    </item>
+    
+    <item>
+      <title>Как изменить цвета подсветки синтаксиса в VS Code</title>
+      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/syntax_highlighting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/syntax_highlighting/</guid>
       <description>Изменить цвета подсветки синтаксиса в VS Code Customizing a Color Theme
 Editor syntax highlighting
 Чтобы настроить цвета подсветки синтаксиса редактора, используйте editor.tokenColorCustomizations в файле настроек пользователя settings.json:

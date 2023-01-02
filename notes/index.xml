@@ -69,16 +69,29 @@ git ls-files --stage projectfolder Первый столбец - тип объе
     
     <item>
       <title>Как изменить цвета подсветки синтаксиса в VS Code</title>
-      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</link>
+      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/syntax_highlighting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/chg_color/</guid>
+      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/syntax_highlighting/</guid>
       <description>Изменить цвета подсветки синтаксиса в VS Code Customizing a Color Theme
 Editor syntax highlighting
 Чтобы настроить цвета подсветки синтаксиса редактора, используйте editor.tokenColorCustomizations в файле настроек пользователя settings.json:
     Изменить для наиболее распространенных конструкций Предварительно настроенный набор синтаксических токенов (&amp;ldquo;комментарии&amp;rdquo;, &amp;ldquo;строки&amp;rdquo;, &amp;hellip;) доступен для наиболее распространенных конструкций
 Изменить цвет комментариев в Default Dark+ :
 &amp;#34;editor.tokenColorCustomizations&amp;#34;: { &amp;#34;[Default Dark+]&amp;#34;: { &amp;#34;strings&amp;#34;: &amp;#34;#679267&amp;#34;, }, }     Непосредственная настройка правил TextMate Узнать значение scope для того элемента, который вы хотите изменить:</description>
+    </item>
+    
+    <item>
+      <title>Как изменить отступы напраляющих в дереве каталогов в VS Code</title>
+      <link>https://naavlad.ru/notes/vscode_settings/custom_settings/workbench_tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/vscode_settings/custom_settings/workbench_tree/</guid>
+      <description>Изменить отступ для дерева каталогов в пикселях По умолчанию, отступ 8 пикселей.
+Что бы изменить это значение, или добавляем в файл настройки:
+// Отступ для дерева каталогов в пикселях &amp;#34;workbench.tree.indent&amp;#34;: 15, или
+Результат:
+    </description>
     </item>
     
     
