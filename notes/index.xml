@@ -5,7 +5,25 @@
     <link>https://naavlad.ru/notes/</link>
     <description>Recent content in Notes on naavlad.ru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://naavlad.ru/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://naavlad.ru/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Screen</title>
+      <link>https://naavlad.ru/notes/ubunty/tools/term_mult/screen/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/ubunty/tools/term_mult/screen/</guid>
+      <description>Установка # Установка sudo apt install screen screen --version     Команды Создать сессию с именем screen -S &amp;lt;имя сессии&amp;gt;
+Подключиться screen -r &amp;lt;id&amp;gt;
+Список сессий screen -ls
+Cоздать новое окно Ctrl+a c
+Просмотр списка созданных Ctrl+a w
+Удалить окно Ctrl+a k
+Удалить все окна сессии Ctrl+a \ Подтвердите решение нажатием y
+Разделить окно по вертикали Ctrl+a |
+Выйти из screen Ctrl+a d
+    </description>
+    </item>
+    
+    <item>
       <title>FSM Aiogram</title>
       <link>https://naavlad.ru/notes/telegram_bots/aiogram/fsm/fsm-aiogram/</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PostgreSQL</title>
+    <title>Notes</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -26,10 +26,10 @@
 
 
 
-<meta property="og:title" content="PostgreSQL" />
+<meta property="og:title" content="Notes" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://naavlad.ru/notes/postgresql/" />
+<meta property="og:url" content="https://naavlad.ru/notes/" />
 
 
 
@@ -171,15 +171,12 @@
   
   
   
-    
-    
-  
   
     
     <li>
-      <i class="fas fa-minus-circle"></i><a class="active" href="/notes/postgresql/">PostgreSQL</a>
+      <i class="fas fa-plus-circle"></i><a class="" href="/notes/postgresql/">PostgreSQL</a>
       
-      <ul class="active">
+      <ul class="">
         
   
   
@@ -362,78 +359,35 @@
       
       
         
-          <!-- raw HTML omitted -->
-<div class="note-card medium-note">
-    <div class="item">
-        <h5 class="note-title"><span>PostgreSQL CLI</span></h5>
         
-            <div class="card">
-                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; CD C:<span style="color:#ae81ff">\P</span>rogram Files<span style="color:#ae81ff">\P</span>ostgreSQL<span style="color:#ae81ff">\1</span>4<span style="color:#ae81ff">\b</span>in
-&gt; psql -V <span style="color:#75715e"># проверка версии</span>
-psql <span style="color:#f92672">(</span>PostgreSQL<span style="color:#f92672">)</span> 14.2
-</code></pre></div></div>
-            </div>
-        
-    </div>
-</div>
-
-<!-- raw HTML omitted -->
-<div class="note-card medium-note">
-    <div class="item">
-        <h5 class="note-title"><span>Изменение кодировки</span></h5>
-        
-            <div class="card">
-                <div class="card-body"><pre tabindex="0"><code>&gt; chcp 1251
-Текущая кодовая страница: 1251
-psql -U postgres
-# изменение кодировки в консоли psql
-postgres=# \! chcp 1251
-postgres это пользователь, подключимся этим пользователем к дефолтной базе postgres
-
-postgres=# \c postgres
-Вы подключены к базе данных &quot;postgres&quot; как пользователь &quot;postgres&quot;.
-
-postgres=#
-
-postgres=# create database shop;
-CREATE DATABASE
-
-postgres=# \c shop
-Вы подключены к базе данных &quot;shop&quot; как пользователь &quot;postgres&quot;.
-shop=#
-</code></pre></div>
-            </div>
-        
-    </div>
-</div>
-
-<!-- raw HTML omitted -->
-<div class="note-card medium-note">
-    <div class="item">
-        <h5 class="note-title"><span>Основные команды</span></h5>
-        
-            <div class="card">
-                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">\q</span> - Выход из консоли
-<span style="color:#ae81ff">\?</span> - Справка по командам консольного клиента psql
-<span style="color:#ae81ff">\h</span> - Справка по доступным командам SQL
-<span style="color:#ae81ff">\h</span> &lt;команда&gt; - Справка по конкретной команде
-
-<span style="color:#ae81ff">\l</span> - Список баз данных сервера
-<span style="color:#ae81ff">\c</span> &lt;dbname&gt; - Выбор базы данных
-<span style="color:#ae81ff">\d</span>t - Список таблиц в текущей базе данных
-<span style="color:#ae81ff">\d</span>u - Список пользователей
-</code></pre></div></div>
-            </div>
-        
-    </div>
-</div>
-
-
         
       
     </div>
     <div class="paginator">
       
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/notes/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/notes/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/notes/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/notes/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
     </div>
   </div>
 </section>

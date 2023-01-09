@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on naavlad.ru</title>
+    <link>https://naavlad.ru/notes/ubunty/</link>
+    <description>Recent content in Ubuntu on naavlad.ru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://naavlad.ru/notes/ubunty/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Screen</title>
+      <link>https://naavlad.ru/notes/ubunty/tools/term_mult/screen/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/ubunty/tools/term_mult/screen/</guid>
+      <description>Установка # Установка sudo apt install screen screen --version     Команды Создать сессию с именем screen -S &amp;lt;имя сессии&amp;gt;
+Подключиться screen -r &amp;lt;id&amp;gt;
+Список сессий screen -ls
+Cоздать новое окно Ctrl+a c
+Просмотр списка созданных Ctrl+a w
+Удалить окно Ctrl+a k
+Удалить все окна сессии Ctrl+a \ Подтвердите решение нажатием y
+Разделить окно по вертикали Ctrl+a |
+Выйти из screen Ctrl+a d
+    </description>
+    </item>
+    
+    
+  </channel>
+</rss>
