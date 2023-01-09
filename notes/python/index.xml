@@ -24,6 +24,16 @@ x = 4 # x is of type int x = &amp;#34;Sally&amp;#34; # x is now of type str     
       <description>Built-in Data Types | Category | Built-in Data Types | |        &amp;ndash; |                       | | Text Type | str | | Numeric Types | int, float, complex | | Sequence Types | list, tuple, range | | Mapping Type | dict | | Set Types | set, frozenset | | Boolean Type | bool | | Binary Types | bytes, bytearray, memoryview |      Get Type of a Variable Print the data type of the variable x:</description>
     </item>
     
+    <item>
+      <title>Декораторы</title>
+      <link>https://naavlad.ru/notes/python/basics/decorators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/python/basics/decorators/</guid>
+      <description>Декоратор Декоратор — это функция, которая позволяет обернуть другую функцию для расширения её функциональности без непосредственного изменения её кода.
+def decorator_function(func): def wrapper(): print(&amp;#39;Функция-обёртка!&amp;#39;) print(&amp;#39;Оборачиваемая функция: {}&amp;#39;.format(func)) print(&amp;#39;Выполняем обёрнутую функцию...&amp;#39;) func() print(&amp;#39;Выходим из обёртки&amp;#39;) return wrapper     Декоратор &amp;#39;время выполнения&amp;#39;. import time from datetime import datetime def check_time(func): def wrapper(): time_start = datetime.now() func() time = datetime.now() - time_start print(f&amp;#34;Время выполнения: {time}&amp;#34;) return wrapper @check_time def foo(): time.</description>
+    </item>
+    
     
   </channel>
 </rss>

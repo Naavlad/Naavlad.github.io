@@ -221,6 +221,15 @@
     <li><a class="" href="/notes/python/basics/data_types/" title="Data Types">Data Types</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/decorators/" title="Декораторы">Декораторы</a></li>
+  
+
 
       </ul>
     </li>
@@ -764,11 +773,15 @@ shop=#
         <h5 class="note-title"><span>Установка Screen и .screenrc</span></h5>
         
             <div class="card">
-                <div class="card-body"><h3 id="установка">Установка</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install screen
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install screen
 screen --version
-</code></pre></div><h3 id="screenrc">.screenrc</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># nano ~/.screenrc</span>
+&gt;&gt;&gt; Screen version 4.09.00 <span style="color:#f92672">(</span>GNU<span style="color:#f92672">)</span> 30-Jan-22
+</code></pre></div></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># nano ~/.screenrc</span>
+
 <span style="color:#75715e"># the following two lines give a two-line status, with the current window highlighted</span>
 hardstatus alwayslastline
 hardstatus string <span style="color:#e6db74">&#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39;</span>
@@ -806,7 +819,7 @@ bindkey <span style="color:#e6db74">&#34;^[[1;5B&#34;</span> focus down
 Список сессий <code>screen -ls</code></p>
 <p>Cоздать новое окно <code>Ctrl+a   c</code><br>
 Просмотр списка созданных <code>Ctrl+a  w</code><br>
-Переключиться на окно №2  <code>Ctrl+a  2</code><br>
+Переключиться на окно №2 <code>Ctrl+a  2</code><br>
 Удалить окно <code>Ctrl+a  k</code><br>
 Удалить все окна сессии <code>Ctrl+a   \</code> Подтвердите решение нажатием <code>y</code></p>
 <p>Разделить окно по вертикали <code>Ctrl+a   |</code></p>
@@ -1305,7 +1318,63 @@ print(type(x))
         
       
         
+          <!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Декоратор</span></h5>
         
+            <div class="card">
+                <div class="card-body"><p>Декоратор — это функция, которая позволяет обернуть другую функцию для расширения её функциональности без непосредственного изменения её кода.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator_function</span>(func):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>():
+        print(<span style="color:#e6db74">&#39;Функция-обёртка!&#39;</span>)
+        print(<span style="color:#e6db74">&#39;Оборачиваемая функция: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(func))
+        print(<span style="color:#e6db74">&#39;Выполняем обёрнутую функцию...&#39;</span>)
+        func()
+        print(<span style="color:#e6db74">&#39;Выходим из обёртки&#39;</span>)
+    <span style="color:#66d9ef">return</span> wrapper
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- raw HTML omitted -->
+<div class="note-card auto-note">
+    <div class="item">
+        <h5 class="note-title"><span>Декоратор &#39;время выполнения&#39;.</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
+<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_time</span>(func):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrapper</span>():
+      time_start <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
+      func()
+      time <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now() <span style="color:#f92672">-</span> time_start
+      print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Время выполнения: </span><span style="color:#e6db74">{</span>time<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+    <span style="color:#66d9ef">return</span> wrapper
+
+<span style="color:#a6e22e">@check_time</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
+    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">10</span>)
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    foo()
+</code></pre></div></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜ ✗ python3 check_time.py
+Время выполнения: 0:00:10.000364
+</code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         

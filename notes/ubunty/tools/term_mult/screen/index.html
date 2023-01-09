@@ -27,7 +27,7 @@
 
 
 <meta property="og:title" content="Screen" />
-<meta property="og:description" content="Установка Screen и .screenrc Установка sudo apt install screen screen --version .screenrc # nano ~/.screenrc # the following two lines give a two-line status, with the current window highlighted hardstatus alwayslastline hardstatus string &#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{&#43;b yk} %n*%t%?(%u)%? %{-}%&#43;w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39; # no welcome message startup_message off # 256 colors attrcolor b &#34;.I&#34; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce on # mouse tracking allows to switch region focus by clicking mousetrack on # navigating regions with Ctrl-arrows bindkey &#34;^[[1;5D&#34; focus left bindkey &#34;^[[1;5C&#34; focus right bindkey &#34;^[[1;5A&#34; focus up bindkey &#34;^[[1;5B&#34; focus down     Команды Screen Создать сессию с именем screen -S &lt;имя сессии&gt;" />
+<meta property="og:description" content="Установка Screen и .screenrc sudo apt install screen screen --version &gt;&gt;&gt; Screen version 4.09.00 (GNU) 30-Jan-22   # nano ~/.screenrc # the following two lines give a two-line status, with the current window highlighted hardstatus alwayslastline hardstatus string &#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{&#43;b yk} %n*%t%?(%u)%? %{-}%&#43;w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39; # no welcome message startup_message off # 256 colors attrcolor b &#34;.I&#34; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce on # mouse tracking allows to switch region focus by clicking mousetrack on # navigating regions with Ctrl-arrows bindkey &#34;^[[1;5D&#34; focus left bindkey &#34;^[[1;5C&#34; focus right bindkey &#34;^[[1;5A&#34; focus up bindkey &#34;^[[1;5B&#34; focus down     Команды Screen Создать сессию с именем screen -S &lt;имя сессии&gt;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://naavlad.ru/notes/ubunty/tools/term_mult/screen/" /><meta property="article:section" content="notes" />
 <meta property="article:published_time" content="2023-01-09T00:00:00+00:00" />
@@ -223,6 +223,15 @@
     <li><a class="" href="/notes/python/basics/data_types/" title="Data Types">Data Types</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/notes/python/basics/decorators/" title="Декораторы">Декораторы</a></li>
+  
+
 
       </ul>
     </li>
@@ -373,11 +382,15 @@
         <h5 class="note-title"><span>Установка Screen и .screenrc</span></h5>
         
             <div class="card">
-                <div class="card-body"><h3 id="установка">Установка</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install screen
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install screen
 screen --version
-</code></pre></div><h3 id="screenrc">.screenrc</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># nano ~/.screenrc</span>
+&gt;&gt;&gt; Screen version 4.09.00 <span style="color:#f92672">(</span>GNU<span style="color:#f92672">)</span> 30-Jan-22
+</code></pre></div></div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># nano ~/.screenrc</span>
+
 <span style="color:#75715e"># the following two lines give a two-line status, with the current window highlighted</span>
 hardstatus alwayslastline
 hardstatus string <span style="color:#e6db74">&#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39;</span>
@@ -415,7 +428,7 @@ bindkey <span style="color:#e6db74">&#34;^[[1;5B&#34;</span> focus down
 Список сессий <code>screen -ls</code></p>
 <p>Cоздать новое окно <code>Ctrl+a   c</code><br>
 Просмотр списка созданных <code>Ctrl+a  w</code><br>
-Переключиться на окно №2  <code>Ctrl+a  2</code><br>
+Переключиться на окно №2 <code>Ctrl+a  2</code><br>
 Удалить окно <code>Ctrl+a  k</code><br>
 Удалить все окна сессии <code>Ctrl+a   \</code> Подтвердите решение нажатием <code>y</code></p>
 <p>Разделить окно по вертикали <code>Ctrl+a   |</code></p>

@@ -11,7 +11,7 @@
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://naavlad.ru/notes/ubunty/tools/term_mult/screen/</guid>
-      <description>Установка Screen и .screenrc Установка sudo apt install screen screen --version .screenrc # nano ~/.screenrc # the following two lines give a two-line status, with the current window highlighted hardstatus alwayslastline hardstatus string &amp;#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&amp;#39; # no welcome message startup_message off # 256 colors attrcolor b &amp;#34;.I&amp;#34; termcapinfo xterm &amp;#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&amp;#39; defbce on # mouse tracking allows to switch region focus by clicking mousetrack on # navigating regions with Ctrl-arrows bindkey &amp;#34;^[[1;5D&amp;#34; focus left bindkey &amp;#34;^[[1;5C&amp;#34; focus right bindkey &amp;#34;^[[1;5A&amp;#34; focus up bindkey &amp;#34;^[[1;5B&amp;#34; focus down     Команды Screen Создать сессию с именем screen -S &amp;lt;имя сессии&amp;gt;</description>
+      <description>Установка Screen и .screenrc sudo apt install screen screen --version &amp;gt;&amp;gt;&amp;gt; Screen version 4.09.00 (GNU) 30-Jan-22   # nano ~/.screenrc # the following two lines give a two-line status, with the current window highlighted hardstatus alwayslastline hardstatus string &amp;#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&amp;#39; # no welcome message startup_message off # 256 colors attrcolor b &amp;#34;.I&amp;#34; termcapinfo xterm &amp;#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&amp;#39; defbce on # mouse tracking allows to switch region focus by clicking mousetrack on # navigating regions with Ctrl-arrows bindkey &amp;#34;^[[1;5D&amp;#34; focus left bindkey &amp;#34;^[[1;5C&amp;#34; focus right bindkey &amp;#34;^[[1;5A&amp;#34; focus up bindkey &amp;#34;^[[1;5B&amp;#34; focus down     Команды Screen Создать сессию с именем screen -S &amp;lt;имя сессии&amp;gt;</description>
     </item>
     
     <item>
@@ -143,6 +143,16 @@ Value - часть контента, по ключу Term
       <description>Creating Variable Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
 x = 5 y = &amp;#34;John&amp;#34; print(x) print(y)     Dynamic Type Variables do not need to be declared with any particular type, and can even change type after they have been set.
 x = 4 # x is of type int x = &amp;#34;Sally&amp;#34; # x is now of type str     Casting x = str(3) # x will be &amp;#39;3&amp;#39; y = int(3) # y will be 3 z = float(3) # z will be 3.</description>
+    </item>
+    
+    <item>
+      <title>Декораторы</title>
+      <link>https://naavlad.ru/notes/python/basics/decorators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naavlad.ru/notes/python/basics/decorators/</guid>
+      <description>Декоратор Декоратор — это функция, которая позволяет обернуть другую функцию для расширения её функциональности без непосредственного изменения её кода.
+def decorator_function(func): def wrapper(): print(&amp;#39;Функция-обёртка!&amp;#39;) print(&amp;#39;Оборачиваемая функция: {}&amp;#39;.format(func)) print(&amp;#39;Выполняем обёрнутую функцию...&amp;#39;) func() print(&amp;#39;Выходим из обёртки&amp;#39;) return wrapper     Декоратор &amp;#39;время выполнения&amp;#39;. import time from datetime import datetime def check_time(func): def wrapper(): time_start = datetime.now() func() time = datetime.now() - time_start print(f&amp;#34;Время выполнения: {time}&amp;#34;) return wrapper @check_time def foo(): time.</description>
     </item>
     
     <item>
