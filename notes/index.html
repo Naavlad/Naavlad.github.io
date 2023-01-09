@@ -761,13 +761,34 @@ shop=#
           <!-- raw HTML omitted -->
 <div class="note-card auto-note">
     <div class="item">
-        <h5 class="note-title"><span>Установка Screen</span></h5>
+        <h5 class="note-title"><span>Установка Screen и .screenrc</span></h5>
         
             <div class="card">
                 <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Установка</span>
 sudo apt install screen
-
 screen --version
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># nano ~/.screenrc</span>
+
+<span style="color:#75715e"># the following two lines give a two-line status, with the current window highlighted</span>
+hardstatus alwayslastline
+hardstatus string <span style="color:#e6db74">&#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39;</span>
+
+<span style="color:#75715e"># no welcome message</span>
+startup_message off
+
+<span style="color:#75715e"># 256 colors</span>
+attrcolor b <span style="color:#e6db74">&#34;.I&#34;</span>
+termcapinfo xterm <span style="color:#e6db74">&#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39;</span>
+defbce on
+
+<span style="color:#75715e"># mouse tracking allows to switch region focus by clicking</span>
+mousetrack on
+
+<span style="color:#75715e"># navigating regions with Ctrl-arrows</span>
+bindkey <span style="color:#e6db74">&#34;^[[1;5D&#34;</span> focus left
+bindkey <span style="color:#e6db74">&#34;^[[1;5C&#34;</span> focus right
+bindkey <span style="color:#e6db74">&#34;^[[1;5A&#34;</span> focus up
+bindkey <span style="color:#e6db74">&#34;^[[1;5B&#34;</span> focus down
 </code></pre></div></div>
             </div>
         
