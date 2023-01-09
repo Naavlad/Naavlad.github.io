@@ -16,11 +16,11 @@
 Список сессий screen -ls
 Cоздать новое окно Ctrl+a c
 Просмотр списка созданных Ctrl+a w
+Переключиться на окно №2 Ctrl+a 2
 Удалить окно Ctrl+a k
 Удалить все окна сессии Ctrl+a \ Подтвердите решение нажатием y
 Разделить окно по вертикали Ctrl+a |
-Выйти из screen Ctrl+a d
-    </description>
+Выйти из screen Ctrl+a d</description>
     </item>
     
     <item>
