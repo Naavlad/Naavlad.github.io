@@ -11,7 +11,7 @@
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://naavlad.ru/notes/ubunty/tools/term_mult/screen/</guid>
-      <description>Установка # Установка sudo apt install screen screen --version     Команды Создать сессию с именем screen -S &amp;lt;имя сессии&amp;gt;
+      <description>Установка Screen # Установка sudo apt install screen screen --version     Команды Screen Создать сессию с именем screen -S &amp;lt;имя сессии&amp;gt;
 Подключиться screen -r &amp;lt;id&amp;gt;
 Список сессий screen -ls
 Cоздать новое окно Ctrl+a c
