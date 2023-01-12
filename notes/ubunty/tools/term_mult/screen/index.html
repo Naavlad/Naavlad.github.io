@@ -27,7 +27,7 @@
 
 
 <meta property="og:title" content="Screen" />
-<meta property="og:description" content="Установка Screen и .screenrc sudo apt install screen screen --version &gt;&gt;&gt; Screen version 4.09.00 (GNU) 30-Jan-22   # nano ~/.screenrc # the following two lines give a two-line status, with the current window highlighted hardstatus alwayslastline hardstatus string &#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{&#43;b yk} %n*%t%?(%u)%? %{-}%&#43;w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39; # no welcome message startup_message off # 256 colors attrcolor b &#34;.I&#34; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce on # mouse tracking allows to switch region focus by clicking mousetrack on # navigating regions with Ctrl-arrows bindkey &#34;^[[1;5D&#34; focus left bindkey &#34;^[[1;5C&#34; focus right bindkey &#34;^[[1;5A&#34; focus up bindkey &#34;^[[1;5B&#34; focus down     Команды Screen Создать сессию с именем screen -S &lt;имя сессии&gt;" />
+<meta property="og:description" content="Установка Screen и .screenrc sudo apt install screen screen --version &gt;&gt;&gt; Screen version 4.09.00 (GNU) 30-Jan-22   # nano ~/.screenrc # the following two lines give a two-line status, with the current window highlighted hardstatus alwayslastline hardstatus string &#39;%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{&#43;b yk} %n*%t%?(%u)%? %{-}%&#43;w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]&#39; # no welcome message startup_message off # keep scrollback n lines defscrollback 500 # 256 colors attrcolor b &#34;.I&#34; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce on # mouse tracking allows to switch region focus by clicking mousetrack on # default windows screen -t App 1 bash screen -t Database 2 bash select 0 bind c screen 1 # window numbering starts at 1 not 0 bind 0 select 10 # navigating regions with Ctrl-arrows bindkey &#34;^[[1;5D&#34; focus left bindkey &#34;^[[1;5C&#34; focus right bindkey &#34;^[[1;5A&#34; focus up bindkey &#34;^[[1;5B&#34; focus down     Команды Screen Создать сессию с именем screen -S &lt;имя сессии&gt;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://naavlad.ru/notes/ubunty/tools/term_mult/screen/" /><meta property="article:section" content="notes" />
 <meta property="article:published_time" content="2023-01-09T00:00:00+00:00" />
@@ -398,6 +398,9 @@ hardstatus string <span style="color:#e6db74">&#39;%{= kG}[%{G}%H%? %1`%?%{g}][%
 <span style="color:#75715e"># no welcome message</span>
 startup_message off
 
+<span style="color:#75715e"># keep scrollback n lines</span>
+defscrollback <span style="color:#ae81ff">500</span>
+
 <span style="color:#75715e"># 256 colors</span>
 attrcolor b <span style="color:#e6db74">&#34;.I&#34;</span>
 termcapinfo xterm <span style="color:#e6db74">&#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39;</span>
@@ -405,6 +408,13 @@ defbce on
 
 <span style="color:#75715e"># mouse tracking allows to switch region focus by clicking</span>
 mousetrack on
+
+<span style="color:#75715e"># default windows</span>
+screen -t App  <span style="color:#ae81ff">1</span> bash
+screen -t Database  <span style="color:#ae81ff">2</span> bash
+<span style="color:#66d9ef">select</span> <span style="color:#ae81ff">0</span>
+bind c screen <span style="color:#ae81ff">1</span> <span style="color:#75715e"># window numbering starts at 1 not 0</span>
+bind <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">select</span> <span style="color:#ae81ff">10</span>
 
 <span style="color:#75715e"># navigating regions with Ctrl-arrows</span>
 bindkey <span style="color:#e6db74">&#34;^[[1;5D&#34;</span> focus left
@@ -427,10 +437,11 @@ bindkey <span style="color:#e6db74">&#34;^[[1;5B&#34;</span> focus down
 Подключиться <code>screen -r &lt;id&gt;</code><br>
 Список сессий <code>screen -ls</code></p>
 <p>Cоздать новое окно <code>Ctrl+a   c</code><br>
+Переименовать окно <code>Ctrl+a   A</code><br>
 Просмотр списка созданных <code>Ctrl+a  w</code><br>
 Переключиться на окно №2 <code>Ctrl+a  2</code><br>
 Удалить окно <code>Ctrl+a  k</code><br>
-Удалить все окна сессии <code>Ctrl+a   \</code> Подтвердите решение нажатием <code>y</code></p>
+Удалить все окна сессии <code>Ctrl+a   \</code></p>
 <p>Разделить окно по вертикали <code>Ctrl+a   |</code></p>
 <p>Выйти из screen <code>Ctrl+a  d</code></p>
 </div>
@@ -537,14 +548,6 @@ bindkey <span style="color:#e6db74">&#34;^[[1;5B&#34;</span> focus down
               
                 <li><a href=https://github.com/Naavlad target="_blank" rel="noopener">
                   <span><i class="fab fa-github"></i></span> <span>github</span>
-                </a></li>
-              
-
-            
-
-              
-                <li><a href=https://don.blognot.co/web/@npl240 target="_blank" rel="noopener">
-                  <span><i class="fab fa-mastodon"></i></span> <span>mastodon</span>
                 </a></li>
               
 
